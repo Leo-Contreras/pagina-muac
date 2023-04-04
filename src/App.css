@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
+.logo {
+  max-height: 100px;
+  padding: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo-muac {
+  max-width: 120%;
+  max-height: 400px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Estilos existentes */
+/* ... */
+
+.share-button {
+  background: #B17A45 !important;
+  border-radius: 24px !important;
+  border: none;
+  border-color: #B17A45 !important;
+  color: white !important; /* Para que el texto del botón sea blanco */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header {
+  font-size: 48px;
+  color: #6a1c32;
+  font-weight: bold;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+/* Estilos existentes */
+/* ... */
+
+.contact-header {
+  color: #000;
+}
+
+.contact-subheader {
+  color: gray;
+}
+
+.texto-bienvenida {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin-bottom: 5px; /* Valor ajustado */
+  border-radius: 20px !important; /* Valor agregado */
+}
+
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos existentes */
+/* ... */
+
+.card-1 {
+  width: 509px;
+  height: 360px !important;
+}
+
+.card-2,
+.card-3 {
+  width: 279px;
+  height: 360px !important;
+}
+
+.card-4,
+.card-5 {
+  width: 509px;
+  height: 450px !important;
+}
+
+.grey-background {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+.footer-background {
+  background-color: #3C3C3B;
+  padding: 20px;
+  color : white;
+}
+
+/* Estilos existentes */
+/* ... */
+
+.tramites-header {
+  color: #000;
+}
+
+.tramites-subheader {
+  color: gray;
+}
+
+.card-6,
+.card-8 {
+  width: 259px;
+  height: 497px !important;
+  background: #D1D5DB;
+  border-radius: 20px;
+}
+
+.card-7,
+.card-9 {
+  width: 259px;
+  height: 497px !important;
+  background: #F3F4F6 !important;
+  border-radius: 20px;
+}
+
+
+.social-header {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.social-icons {
+  font-size: 2rem; /* Aumentar el tamaño de los iconos */
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social-icon-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
 }
+
+.social-icon-col a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-icon-col p {
+  margin: 0;
+  font-size: 0.9rem;
+  text-align: center;
+}
+.copyright-text {
+  text-align: center;
+}
+
