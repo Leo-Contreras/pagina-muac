@@ -98,7 +98,7 @@ function App() {
                                 className="mb-4 custom-image card-5"
                                 src={cardImg5}
                                 alt="Card 5"
-                                onClick={() => window.open('linktr.ee/atencionciudadanabc', '_blank')}
+                                onClick={() => window.open('https://linktr.ee/atencionciudadanabc?utm_source=linktree_profile_share&ltsid=0eeec74c-56b1-4e9a-8a8d-da7814867006', '_blank')}
                             />
                         </Col>
                     </Row>
@@ -116,10 +116,10 @@ function App() {
                 </Row>
                 <Row>
                         <Col xs={12} sm={6} md={6} lg={3} className="mb-4">
-                            <Card className="card-6" >
+                            <Card className="card-6" onClick={() => window.open('https://citas.ebajacalifornia.gob.mx/', '_blank')}>
                                 <Card.Body>
                                     <Card.Text ><h1><strong>Citas del Gobierno del Estado</strong></h1></Card.Text>
-                                    <Card.Text >
+                                    <Card.Text className="text-justify" >
                                         Agenda tu cita en la oficina de tu municipio más cercana para realizar el trámite o servicio que necesitas. ¡Te esperamos!
                                     </Card.Text>
                                     <Card.Link href="https://citas.ebajacalifornia.gob.mx/" target="_blank">Ir al sitio de Citas</Card.Link>
@@ -130,7 +130,7 @@ function App() {
                             <Card className="card-7" onClick={() => window.open('https://tramites.ebajacalifornia.gob.mx/ventanillaunica/', '_blank')}>
                                 <Card.Body>
                                     <Card.Title><h1><strong>Trámites Digitales</strong> </h1></Card.Title>
-                                    <Card.Text>
+                                    <Card.Text className="text-justify">
                                         ¡Te invitamos a descubrir nuestros nuevos servicios en línea! Ahora podrás realizar más servicios desde la comodidad de tu hogar y sin necesidad de hacer filas.
                                     </Card.Text>
                                     <Card.Link href="https://tramites.ebajacalifornia.gob.mx/ventanillaunica/" target="_blank">Ir a Ventanilla digital</Card.Link>
@@ -152,7 +152,7 @@ function App() {
                         <Card className="card-9" onClick={() => window.open('https://www.bajacalifornia.gob.mx/Gobierno/FAQ', '_blank')}>
                             <Card.Body>
                                 <Card.Title> <h1><strong>Preguntas frecuentes</strong> </h1></Card.Title>
-                                <Card.Text>
+                                <Card.Text className="text-justify">
                                     Aquí encontrarás las preguntas más frecuentes de los ciudadanos sobre los trámites de Control Vehicular (Placas), Licencias de Conducir e Impuestos que ofrece la Secretaría de Hacienda.
                                 </Card.Text>
                                 <Card.Link href="https://www.bajacalifornia.gob.mx/Gobierno/FAQ" target="_blank">Ir a Preguntas frecuentes</Card.Link>

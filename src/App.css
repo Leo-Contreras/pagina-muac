@@ -305,3 +305,11 @@
 .card-9 .card-link {
   color: #B17A45;
 }
+
+
+@media (max-width: 767px) {
+  /* Estilos para dispositivos móviles */
+}
+@media (min-width: 768px) {
+  /* Estilos para tabletas y dispositivos más grandes */
+}
