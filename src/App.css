@@ -18,11 +18,33 @@
   border-color: #B17A45 !important;
   color: white !important; /* Para que el texto del botón sea blanco */
 }
+.header-2 {
+
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 44px;
+  /* identical to box height, or 122% */
+
+  letter-spacing: -0.01em;
+
+  /* Red */
+
+  color: #6A1C32;
+}
 
 .header {
-  font-size: 48px;
-  color: #6a1c32;
-  font-weight: bold;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 84px;
+  letter-spacing: -0.02em;
+
+  /* Red */
+
+  color: #6A1C32;
+
 }
 
 .row {
@@ -33,19 +55,33 @@
 /* ... */
 
 .contact-header {
-  color: #000;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 68px;
 }
 
 .contact-subheader {
-  color: gray;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 36px;
 }
 
 .texto-bienvenida {
-  font-family: 'Montserrat';
+
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 16px;
+  line-height: 43px;
+  text-align: justify;
+  /* or 269% */
+
+
+  color: #3C3C3B;
+
+
 }
 
 .card {
@@ -63,23 +99,6 @@
 /* Estilos existentes */
 /* ... */
 
-.card-1 {
-  width: 509px;
-  height: 360px !important;
-}
-
-.card-2,
-.card-3 {
-  width: 279px;
-  height: 360px !important;
-}
-
-.card-4,
-.card-5 {
-  width: 509px;
-  height: 450px !important;
-}
-
 .grey-background {
   background-color: #f0f0f0;
   padding: 20px;
@@ -94,16 +113,24 @@
 /* ... */
 
 .tramites-header {
-  color: #000;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 68px;
 }
 
 .tramites-subheader {
-  color: gray;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 36px;
 }
 
 .card-6,
 .card-8 {
-  width: 259px;
+  width: 300px;
   height: 497px !important;
   background: #D1D5DB;
   border-radius: 20px;
@@ -111,24 +138,46 @@
 
 .card-7,
 .card-9 {
-  width: 259px;
+  width: 300px;
   height: 497px !important;
   background: #F3F4F6 !important;
   border-radius: 20px;
 }
 
 
-.social-header {
-  color: white;
-}
-
-
 .social-icons {
-  font-size: 2rem; /* Aumentar el tamaño de los iconos */
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  flex-wrap: wrap;
 }
+
+.social-icon-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  color: #B17A45; /* Cambia el color del ícono en hover, puedes ajustar este valor según tus preferencias */
+}
+
+.social-icon p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
 
 .social-icon-col {
   display: flex;
@@ -151,3 +200,106 @@
   text-align: center;
 }
 
+.custom-image {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 20px; /* Agrega esta línea para redondear las esquinas */
+}
+
+.custom-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos específicos para cada imagen */
+.card-1 {
+  max-width: 509px;
+  max-height: 410px;
+}
+
+.card-2,
+.card-3 {
+  max-width: 279px;
+  max-height: 335px;
+}
+
+
+.card-4 {
+  max-width: 509px;
+  max-height: 550px;
+  min-width: 509px;
+  min-height: 550px;
+}
+
+.card-5 {
+  max-width: 608px;
+  max-height: 550px;
+  min-width: 608px;
+  min-height: 550px;
+}
+
+.card-header {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.card-6,
+.card-7,
+.card-8,
+.card-9 {
+  transition: transform 0.3s ease-in-out;
+  width: 259px;
+  height: 497px;
+  border-radius: 20px;
+}
+
+.card-6:hover,
+.card-7:hover,
+.card-8:hover,
+.card-9:hover {
+  transform: scale(1.05); /* Ajusta este valor según tus preferencias */
+}
+
+.card-6 .card-body,
+.card-7 .card-body,
+.card-8 .card-body,
+.card-9 .card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.card-6 .card-Title,
+.card-7 .card-Title,
+.card-8 .card-Title,
+.card-9 .card-Title {
+
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  /* or 122% */
+
+  letter-spacing: -0.01em;
+
+  /* Black */
+
+  color: #131313;
+}
+
+
+.card-6 .card-link,
+.card-7 .card-link,
+.card-8 .card-link,
+.card-9 .card-link {
+  color: #B17A45;
+}
