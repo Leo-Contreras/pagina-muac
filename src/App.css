@@ -112,19 +112,27 @@
   line-height: 36px;
 }
 
-.card-6,
-.card-8 {
-  width: 300px;
-  height: 497px ;
-  background: #D1D5DB;
+.card-6 .card-body,
+.card-8 .card-body {
+  min-width: 300px;
+  height: 497px;
+  background: #D1D5DB !important;
   border-radius: 20px;
 }
 
+.card-7 .card-body,
+.card-9 .card-body {
+  min-width: 300px;
+  height: 497px;
+  background: #F3F4F6 !important;
+  border-radius: 20px;
+}
+
+.card-6,
 .card-7,
+.card-8,
 .card-9 {
-  width: 300px;
-  height: 497px ;
-  background: #F3F4F6;
+  transition: transform 0.3s ease-in-out;
   border-radius: 20px;
 }
 
@@ -228,15 +236,6 @@
     font-size: 32px;
 }
 
-.card-6,
-.card-7,
-.card-8,
-.card-9 {
-  transition: transform 0.3s ease-in-out;
-  width: 259px !important;
-  height: 497px !important;
-  border-radius: 20px;
-}
 
 .card-6:hover,
 .card-7:hover,
@@ -269,11 +268,7 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 44px;
-  /* or 122% */
-
   letter-spacing: -0.01em;
-
-  /* Black */
 
   color: #131313;
 }
@@ -327,15 +322,13 @@
   }
 }
 
-/* Agrega un margen superior al botón */
-/* Ajusta el ancho del botón y lo centra */
 .custom-card .card-btn {
   width: 100%; /* Ajusta el ancho del botón */
   margin: 60px auto 0; /* Añade margen superior y centra el botón */
   display: block; /* Permite aplicar márgenes y centrar el botón */
 }
 
-/* Aumenta el efecto de hover en el componente */
+
 .custom-card:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
@@ -348,11 +341,9 @@
   font-weight: 700;
   font-size: 44px;
   line-height: 44px;
-  /* identical to box height, or 122% */
-
   letter-spacing: -0.01em;
 
-  /* Black */
+
 
   color: #131313;
 }
@@ -365,10 +356,6 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 32px;
-    /* identical to box height, or 160% */
-
-
-    /* Black */
 
     color: #131313;
 }
@@ -379,11 +366,9 @@
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
-  /* identical to box height, or 150% */
 
   letter-spacing: 0.002em;
 
-  /* Black */
 
   color: #131313;
 
@@ -399,10 +384,6 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 20px;
-  /* or 143% */
-
-
-  /* Black */
 
   color: #131313;
 

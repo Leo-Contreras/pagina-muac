@@ -1,5 +1,6 @@
 import React from 'react';
 import { IoPerson } from 'react-icons/io5';
+import { FaRegCalendarAlt, FaLaptop, FaMapMarkerAlt, FaQuestionCircle } from 'react-icons/fa';
 import { MdEmail, MdLocalPhone, MdLocationOn, MdLanguage } from 'react-icons/md';
 import {Container, Row, Col, Button, Card} from 'react-bootstrap';
 import logo from './imagenes/logo adbc png.png';
@@ -164,6 +165,7 @@ function App() {
                         >
                             <Card.Body className="d-flex flex-column">
                                 <Card.Text>
+                                    <FaRegCalendarAlt />
                                     <h1>
                                         <strong>Citas del Gobierno del Estado</strong>
                                     </h1>
@@ -193,6 +195,7 @@ function App() {
                         >
                             <Card.Body className="d-flex flex-column">
                                 <Card.Title>
+                                    <FaLaptop />
                                     <h1>
                                         <strong>Trámites Digitales</strong>{" "}
                                     </h1>
@@ -223,7 +226,7 @@ function App() {
                         >
                             <Card.Body className="d-flex flex-column">
                                 <Card.Title>
-                                    {" "}
+                                    <FaMapMarkerAlt />
                                     <h1>
                                         <strong>Kioskos Multi-Servicios </strong>
                                     </h1>
@@ -252,7 +255,7 @@ function App() {
                         >
                             <Card.Body className="d-flex flex-column">
                                 <Card.Title>
-                                    {" "}
+                                    <FaQuestionCircle />
                                     <h1>
                                         <strong>Preguntas frecuentes</strong>{" "}
                                     </h1>
