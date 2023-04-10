@@ -1,4 +1,6 @@
 import React from 'react';
+import { IoPerson } from 'react-icons/io5';
+import { MdEmail, MdLocalPhone, MdLocationOn, MdLanguage } from 'react-icons/md';
 import {Container, Row, Col, Button, Card} from 'react-bootstrap';
 import logo from './imagenes/logo adbc png.png';
 import logoMuac from './imagenes/BC-MUAC-mobile@4k - copia.jpg';
@@ -8,7 +10,7 @@ import cardImg1 from './imagenes/card 1 img.png';
 import cardImg2 from './imagenes/card img 2.png';
 import cardImg3 from './imagenes/card img 3.png';
 import cardImg4 from './imagenes/card img 4.png';
-import cardImg5 from './imagenes/card img 5.png';
+
 
 
 
@@ -24,7 +26,9 @@ function App() {
                         </a>
                     </Col>
                     <Col className="text-end">
-                        <Button className="share-button hide-on-mobile">Compartir</Button>
+                        <Button className="share-button hide-on-mobile" onClick={handleShare}>
+                            Compartir
+                        </Button>
                     </Col>
                 </Row>
                 <Row className="my-3">
@@ -109,18 +113,33 @@ function App() {
                                 }
                             />
                         </Col>
-                        <Col md={6} className="mb-4">
-                            <img
-                                className="custom-image card-5 w-100"
-                                src={cardImg5}
-                                alt="Card 5"
-                                onClick={() =>
-                                    window.open(
-                                        "https://linktr.ee/atencionciudadanabc?utm_source=linktree_profile_share&ltsid=0eeec74c-56b1-4e9a-8a8d-da7814867006",
-                                        "_blank"
-                                    )
-                                }
-                            />
+                        <Col md={6} className="d-flex justify-content-center text-center">
+                            <Card className="custom-card card-5">
+                                <Container>
+                                  <Card.Body className="card-content">
+                                    <Card.Text className="titulo-card5">Ubícanos</Card.Text>
+                                    <Card.Subtitle className="mb-2 subtitle-card5">¡Estamos para ayudarte!</Card.Subtitle>
+                                    <Card.Text className="oficialia-card5">
+                                        <MdLocationOn className="icon-card5" /> Edificio Poder Ejecutivo Calzada Independencia #994 Centro Cívico y Comercial, Mexicali, Baja California, Mexico, 21000
+                                    </Card.Text>
+                                    <Card.Text className="contacto-card5">
+                                        <MdEmail className="icon-card5" /> atencionciudadana@bajacalifornia.gob.mx
+                                    </Card.Text>
+                                    <Card.Text className="contacto-card5">
+                                        <MdLocalPhone className="icon-card5" /> Teléfono: 686 900 90 91
+                                    </Card.Text>
+                                    <Card.Link className="enlace-card5" href="https://linktr.ee/atencionciudadanabc" target="_blank"><MdLanguage className="icon-card5" /> linktr.ee/atencionciudadanabc</Card.Link>
+                                      <button className="custom-button card-btn" onClick={downloadVCard}>
+                                          Guardar en mis Contactos
+                                          <span className="contact-icon">
+                                            <IoPerson />
+                                          </span>
+                                      </button>
+
+                                  </Card.Body>
+                                </Container>
+                            </Card>
+
                         </Col>
                     </Row>
                 </Container>
@@ -313,6 +332,52 @@ function App() {
         </>
 
     );
+
+
 }
+
+function downloadVCard() {
+    const vCardData = [
+        "BEGIN:VCARD",
+        "VERSION:3.0",
+        "N:Ciudadana;Atención;;;",
+        "FN:Modelo Unico",
+        "ORG:Modelo Unico de Atención Ciudadana",
+        "TITLE:MUAC",
+        "TEL;TYPE=work,voice;VALUE=uri:tel:+52 686 900 90 91",
+        "EMAIL:atencionciudadana@bajacalifornia.gob.mx",
+        "END:VCARD",
+    ].join("\n");
+
+    const blob = new Blob([vCardData], { type: "text/vcard" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "contacto.vcf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+}
+
+async function handleShare() {
+    if (navigator.share) {
+        try {
+            await navigator.share({
+                title: "Comparte este enlace",
+                text: "Echa un vistazo a este enlace: ",
+                url: "https://www.ejemplo.com",
+            });
+            console.log("Contenido compartido exitosamente");
+        } catch (err) {
+            console.error("Error al compartir:", err);
+        }
+    } else {
+        // Alternativa para navegadores que no soportan la Web Share API
+        alert("La Web Share API no está soportada en este navegador.");
+    }
+}
+
+
 
 export default App;

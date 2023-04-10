@@ -115,15 +115,15 @@
 .card-6,
 .card-8 {
   width: 300px;
-  height: 497px !important;
-  background: #D1D5DB !important;
+  height: 497px ;
+  background: #D1D5DB;
   border-radius: 20px;
 }
 
 .card-7,
 .card-9 {
   width: 300px;
-  height: 497px !important;
+  height: 497px ;
   background: #F3F4F6;
   border-radius: 20px;
 }
@@ -233,8 +233,8 @@
 .card-8,
 .card-9 {
   transition: transform 0.3s ease-in-out;
-  width: 259px;
-  height: 497px;
+  width: 259px !important;
+  height: 497px !important;
   border-radius: 20px;
 }
 
@@ -327,13 +327,222 @@
   }
 }
 
-@media (min-width: 768px) {
-  /* Estilos para tabletas y dispositivos más grandes */
-  /* Ya tienes estilos específicos aquí, así que no es necesario hacer cambios */
+/* Agrega un margen superior al botón */
+/* Ajusta el ancho del botón y lo centra */
+.custom-card .card-btn {
+  width: 100%; /* Ajusta el ancho del botón */
+  margin: 60px auto 0; /* Añade margen superior y centra el botón */
+  display: block; /* Permite aplicar márgenes y centrar el botón */
 }
 
-/* CSS existente */
-/* ... */
+/* Aumenta el efecto de hover en el componente */
+.custom-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+.titulo-card5 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 44px;
+  /* identical to box height, or 122% */
+
+  letter-spacing: -0.01em;
+
+  /* Black */
+
+  color: #131313;
+}
+
+  .subtitle-card5 {
+  /* Body 20/Medium */
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 32px;
+    /* identical to box height, or 160% */
+
+
+    /* Black */
+
+    color: #131313;
+}
+
+  .oficialia-card5 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.002em;
+
+  /* Black */
+
+  color: #131313;
+
+
+}
+
+  .direccion-card5 {
+
+  /* Label 14/Regular */
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  /* or 143% */
+
+
+  /* Black */
+
+  color: #131313;
+
+}
+
+
+  .contacto-card5 {
+
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.002em;
+
+  /* Black */
+
+  color: #131313;
+}
+
+  .enlace-card5 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+
+    letter-spacing: 0.005em;
+
+    /* Gold */
+
+    color: #B17A45;
+
+  }
+
+  .paginaweb-card5 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.002em;
+
+    /* Black */
+
+    color: #131313;
+
+  }
+
+.custom-card {
+  padding: 20px;
+}
+
+.card-5 {
+  max-width: 608px;
+  max-height: 550px;
+}
+
+.titulo-card5 {
+  margin-bottom: 20px;
+}
+
+.subtitle-card5 {
+  margin-bottom: 30px;
+}
+
+.oficialia-card5 {
+  margin-bottom: 10px;
+}
+
+.direccion-card5 {
+  margin-bottom: 20px;
+}
+
+.enlace-card5 {
+  margin-bottom: 10px;
+}
+
+.contacto-card5 {
+  margin-bottom: 10px;
+}
+
+.paginaweb-card5 {
+  margin-bottom: 10px;
+}
+
+.titulo-card5,
+.subtitle-card5,
+.oficialia-card5,
+.direccion-card5,
+.enlace-card5,
+.contacto-card5,
+.paginaweb-card5 {
+  margin-left: 30px; /* Ajusta este valor para modificar el espacio a la izquierda del texto */
+}
+
+.card-content {
+  text-align: left;
+  padding-left: 40px; /* Ajusta este valor según la cantidad de espacio deseada */
+}
+
+.icon-card5 {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.custom-button {
+  width: 416px;
+  height: 48px;
+  background: #BC955C;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: #a47b4c;
+}
+
+.custom-card .contact-icon {
+  font-size: 24px; /* Ajusta el tamaño del ícono */
+  margin-left: 8px;
+}
+
+@media (max-width: 767px) {
+  .custom-button {
+    width: 60%;
+    font-size: 16px;
+  }
+}
+
+
 
 /* Consulta de medios para pantallas medianas */
 @media (max-width: 991px) {
@@ -370,5 +579,24 @@
   .stack-on-mobile {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .titulo-card5 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .subtitle-card5,
+  .oficialia-card5,
+  .direccion-card5,
+  .contacto-card5,
+  .paginaweb-card5 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .enlace-card5 {
+    font-size: 14px;
+    line-height: 16px;
   }
 }
