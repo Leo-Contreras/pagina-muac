@@ -50,7 +50,7 @@ function App() {
                         </h6>
                     </Col>
                     <Col md={6} xs={12} className="text-center">
-                        <img src={logoMuac} alt="Logo MUAC" className="logo-muac" />
+                        <img src={logoMuac} alt="Logo MUAC" className="logo-muac"/>
                     </Col>
                 </Row>
             </Container>
@@ -66,7 +66,8 @@ function App() {
                         </Col>
                     </Row>
                     <Row>
-                        <Col md={6} className="mb-4">
+
+                        <Col md={6} className="mb-2">
                             <img
                                 className="custom-image card-1 w-100"
                                 src={cardImg1}
@@ -76,7 +77,7 @@ function App() {
                                 }
                             />
                         </Col>
-                        <Col md={3} className="mb-4">
+                        <Col md={3} className="mb-2">
                             <img
                                 className="custom-image card-2 w-100"
                                 src={cardImg2}
@@ -86,7 +87,7 @@ function App() {
                                 }
                             />
                         </Col>
-                        <Col md={3} className="mb-4">
+                        <Col md={3} className="mb-2">
                             <img
                                 className="custom-image card-3 w-100"
                                 src={cardImg3}
@@ -101,7 +102,7 @@ function App() {
                         </Col>
                     </Row>
                     <Row>
-                        <Col md={6} className="mb-4">
+                        <Col md={6} className="mb-2">
                             <img
                                 className="custom-image card-4 w-100"
                                 src={cardImg4}
@@ -136,7 +137,6 @@ function App() {
                                             <IoPerson />
                                           </span>
                                       </button>
-
                                   </Card.Body>
                                 </Container>
                             </Card>
@@ -298,7 +298,7 @@ function App() {
                         </a>
                     </Col>
                     <Col className="social-icon-col">
-                        <a href="/" target="_blank" rel="noopener noreferrer" className="social-icon">
+                        <a href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F120544204635995" target="_blank" rel="noopener noreferrer" className="social-icon">
                             <FaFacebookMessenger size ="3x" />
                             <p>Messenger</p>
                         </a>
@@ -310,7 +310,7 @@ function App() {
                         </a>
                     </Col>
                     <Col className="social-icon-col">
-                        <a href="/" target="_blank" rel="noopener noreferrer" className="social-icon">
+                        <a href="https://api.whatsapp.com/send/?phone=5216869009091&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="social-icon">
                             <FaWhatsapp size ="3x"/>
                             <p>WhatsApp</p>
                         </a>
