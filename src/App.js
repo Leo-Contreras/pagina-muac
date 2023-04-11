@@ -13,12 +13,7 @@ import cardImg2 from './imagenes/card img 2.png';
 import cardImg3 from './imagenes/card img 3.png';
 
 
-
-
-
 function App() {
-
-
     return (
         <>
             <Container>
@@ -68,7 +63,7 @@ function App() {
                         </Col>
                     </Row>
                     <Row className="d-flex flex-column flex-md-row align-items-center">
-                        <Col md={6} className="mb-2">
+                        <Col md={6}  className="mb-2">
                             <img
                                 className="custom-image card-1 w-100"
                                 src={cardImg1}
@@ -77,14 +72,17 @@ function App() {
                             />
                         </Col>
                         <Col md={3} className="mb-2">
+                            <Container>
                             <img
                                 className="custom-image card-2 w-100"
                                 src={cardImg2}
                                 alt="Card 2"
                                 onClick={() => window.open("https://api.whatsapp.com", "_blank")}
                             />
+                            </Container>
                         </Col>
                         <Col md={3} className="mb-2">
+                         <Container>
                             <img
                                 className="custom-image card-3 w-100"
                                 src={cardImg3}
@@ -96,6 +94,7 @@ function App() {
                                     )
                                 }
                             />
+                         </Container>
                         </Col>
                     </Row>
 
@@ -104,11 +103,11 @@ function App() {
                             <Card className="custom-card card-5 same-height-card">
                                 <Container>
                                     <Card.Body className="card-content center-text">
-                                        <Card.Text className="titulo-card5">Atención a Quejas y Denuncias Ciudadanas</Card.Text>
+                                        <Card.Text className="titulo-card4">Atención a Quejas y Denuncias Ciudadanas</Card.Text>
                                         <Card.Text className="oficialia-card4">
                                             El Sistema de Atención a Quejas y Denuncias Ciudadanas es un sistema de la Secretaría de la Función Pública creado para registrar, captar, administrar, atender e investigar denuncias que cualquier persona formule en el marco de la Ley General de Responsabilidades Administrativas.
                                         </Card.Text>
-
+                                        <div style={{ marginTop: '150px' }}></div>
                                         <button
                                             className="custom-button card-btn"
                                             onClick={() =>
@@ -400,7 +399,4 @@ async function handleShare() {
         alert("La Web Share API no está soportada en este navegador.");
     }
 }
-
-
-
 export default App;
