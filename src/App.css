@@ -243,6 +243,7 @@
 .card-4 {
   max-width: 100%;
   max-height: 550px;
+  min-height: 550px;
 
 }
 
@@ -461,8 +462,14 @@
 .card-5 {
   max-width: 608px;
   max-height: 550px;
+  min-height: 550px;
   word-break: break-word;
   background-color: #F9FAFB;
+  overflow-wrap: break-word;
+}
+
+.text-container {
+  width: 100%;
 }
 
 .titulo-card5 {
@@ -475,6 +482,19 @@
 
 .oficialia-card5 {
   margin-bottom: 10px;
+}
+
+.oficialia-card4 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  text-align: center;
+
+  color: #000000;
 }
 
 .direccion-card5 {
@@ -513,6 +533,13 @@
   vertical-align: middle;
 }
 
+.same-height-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
 .custom-button {
   width: 416px;
   height: 48px;
@@ -534,6 +561,10 @@
   margin-left: 8px;
 }
 
+.card-4-small {
+  max-width: 90%;
+  margin: 0 auto;
+}
 
 
 
@@ -600,5 +631,41 @@
   .enlace-card5 {
     font-size: 14px;
     line-height: 16px;
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 576px) {
+  .titulo-card5,
+  .subtitle-card5,
+  .oficialia-card5,
+  .contacto-card5,
+  .enlace-card5 {
+    font-size: 0.8rem;
+  }
+}
+
+/* Estilos para pantallas medianas */
+@media (min-width: 577px) and (max-width: 768px) {
+  .titulo-card5,
+  .subtitle-card5,
+  .oficialia-card5,
+  .contacto-card5,
+  .enlace-card5 {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-5 {
+    max-width: 100%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-5 {
+    max-width: 100%;
+    padding: 5px;
   }
 }

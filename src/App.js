@@ -1,5 +1,6 @@
 import React from 'react';
 import { IoPerson } from 'react-icons/io5';
+import ClampLines from 'react-clamp-lines';
 import { FaRegCalendarAlt, FaLaptop, FaMapMarkerAlt, FaQuestionCircle } from 'react-icons/fa';
 import { MdEmail, MdLocalPhone, MdLocationOn, MdLanguage } from 'react-icons/md';
 import {Container, Row, Col, Button, Card} from 'react-bootstrap';
@@ -10,13 +11,14 @@ import './App.css';
 import cardImg1 from './imagenes/card 1 img.png';
 import cardImg2 from './imagenes/card img 2.png';
 import cardImg3 from './imagenes/card img 3.png';
-import cardImg4 from './imagenes/card img 4.png';
 
 
 
 
 
 function App() {
+
+
     return (
         <>
             <Container>
@@ -65,16 +67,13 @@ function App() {
                             </h5>
                         </Col>
                     </Row>
-                    <Row>
-
+                    <Row className="d-flex flex-column flex-md-row align-items-center">
                         <Col md={6} className="mb-2">
                             <img
                                 className="custom-image card-1 w-100"
                                 src={cardImg1}
                                 alt="Card 1"
-                                onClick={() =>
-                                    window.open("http://www.bajacalifornia.gob.mx", "_blank")
-                                }
+                                onClick={() => window.open("http://www.bajacalifornia.gob.mx", "_blank")}
                             />
                         </Col>
                         <Col md={3} className="mb-2">
@@ -82,9 +81,7 @@ function App() {
                                 className="custom-image card-2 w-100"
                                 src={cardImg2}
                                 alt="Card 2"
-                                onClick={() =>
-                                    window.open("https://api.whatsapp.com", "_blank")
-                                }
+                                onClick={() => window.open("https://api.whatsapp.com", "_blank")}
                             />
                         </Col>
                         <Col md={3} className="mb-2">
@@ -94,53 +91,76 @@ function App() {
                                 alt="Card 3"
                                 onClick={() =>
                                     window.open(
-                                        "https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger                %2Ft%2F120544204635995",
+                                        "https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger%2Ft%2F120544204635995",
                                         "_blank"
                                     )
                                 }
                             />
                         </Col>
                     </Row>
-                    <Row>
-                        <Col md={6} className="mb-2">
-                            <img
-                                className="custom-image card-4 w-100"
-                                src={cardImg4}
-                                alt="Card 4"
-                                onClick={() =>
-                                    window.open(
-                                        "http://sctg.bajacalifornia.gob.mx:8080/quejas/queja.jsp",
-                                        "_blank"
-                                    )
-                                }
-                            />
-                        </Col>
-                        <Col md={6} className="d-flex justify-content-center text-center">
-                            <Card className="custom-card card-5">
+
+                    <Row className="d-flex flex-column flex-xl-row align-items-center">
+                        <Col xl={6} md={12} className="mb-2">
+                            <Card className="custom-card card-5 same-height-card">
                                 <Container>
-                                  <Card.Body className="card-content">
-                                    <Card.Text className="titulo-card5">Ubícanos</Card.Text>
-                                    <Card.Subtitle className="mb-2 subtitle-card5">¡Estamos para ayudarte!</Card.Subtitle>
-                                    <Card.Text className="oficialia-card5">
-                                        <MdLocationOn className="icon-card5" /> Edificio Poder Ejecutivo Calzada Independencia #994 Centro Cívico y Comercial, Mexicali, Baja California, Mexico, 21000
-                                    </Card.Text>
-                                    <Card.Text className="contacto-card5">
-                                        <MdEmail className="icon-card5" /> atencionciudadana@bajacalifornia.gob.mx
-                                    </Card.Text>
-                                    <Card.Text className="contacto-card5">
-                                        <MdLocalPhone className="icon-card5" /> Teléfono: 686 900 90 91
-                                    </Card.Text>
-                                    <Card.Link className="enlace-card5" href="https://linktr.ee/atencionciudadanabc" target="_blank"><MdLanguage className="icon-card5" /> linktr.ee/atencionciudadanabc</Card.Link>
-                                      <button className="custom-button card-btn" onClick={downloadVCard}>
-                                          Guardar en mis Contactos
-                                          <span className="contact-icon">
-                                            <IoPerson />
-                                          </span>
-                                      </button>
-                                  </Card.Body>
+                                    <Card.Body className="card-content center-text">
+                                        <Card.Text className="titulo-card5">Atención a Quejas y Denuncias Ciudadanas</Card.Text>
+                                        <Card.Text className="oficialia-card4">
+                                            El Sistema de Atención a Quejas y Denuncias Ciudadanas es un sistema de la Secretaría de la Función Pública creado para registrar, captar, administrar, atender e investigar denuncias que cualquier persona formule en el marco de la Ley General de Responsabilidades Administrativas.
+                                        </Card.Text>
+
+                                        <button
+                                            className="custom-button card-btn"
+                                            onClick={() =>
+                                                window.open(
+                                                    "http://sctg.bajacalifornia.gob.mx:8080/quejas/queja.jsp",
+                                                    "_blank"
+                                                )
+                                            }
+                                            style={{ backgroundColor: "#6A1C32" }}
+                                        >
+                                            Ir a sitio SCTG
+                                        </button>
+
+                                    </Card.Body>
                                 </Container>
                             </Card>
-
+                        </Col>
+                        <Col xl={6} md={12} className="d-flex justify-content-center text-center">
+                            <Card className="custom-card card-5 same-height-card">
+                                <Container>
+                                    <Card.Body className="card-content">
+                                        <div className="text-container">
+                                            <Card.Text className="titulo-card5">Ubícanos</Card.Text>
+                                            <Card.Subtitle className="mb-2 subtitle-card5">¡Estamos para ayudarte!</Card.Subtitle>
+                                            <Card.Text className="oficialia-card5">
+                                                <MdLocationOn className="icon-card5" />
+                                                <ClampLines
+                                                    text="Edificio Poder Ejecutivo Calzada Independencia #994 Centro Cívico y Comercial, Mexicali, Baja California, Mexico, 21000"
+                                                    id="oficialia-card5-text"
+                                                    lines={3}
+                                                    ellipsis="..."
+                                                    buttons={false}
+                                                    innerElement="span"
+                                                />
+                                            </Card.Text>
+                                            <Card.Text className="contacto-card5">
+                                                <MdEmail className="icon-card5" /> atencionciudadana@bajacalifornia.gob.mx
+                                            </Card.Text>
+                                            <Card.Text className="contacto-card5">
+                                                <MdLocalPhone className="icon-card5" /> Teléfono: 686 900 90 91
+                                            </Card.Text>
+                                            <Card.Link className="enlace-card5" href="https://linktr.ee/atencionciudadanabc" target="_blank"><MdLanguage className="icon-card5" /> linktr.ee/atencionciudadanabc</Card.Link>
+                                            <button className="custom-button card-btn" onClick={downloadVCard}>
+                                                Guardar en mis Contactos
+                                                <span className="contact-icon">
+                                                    <IoPerson />
+                                                  </span>
+                                            </button>
+                                        </div>
+                                    </Card.Body>
+                                </Container>
+                            </Card>
                         </Col>
                     </Row>
                 </Container>
