@@ -229,28 +229,26 @@
 
 /* Estilos específicos para cada imagen */
 .card-1 {
-  max-width: 610px;
+  max-width: 600px;
   max-height: 335px;
 }
 
 .card-2,
 .card-3 {
-  width: 279px;
   height: 335px;
+  width: 279px;
 }
 
 
 .card-4 {
-  width: 509px;
-  max-height: 550px;
-
-
+  width: 635px;
+  height: 600px;
 }
 
 .card-header {
   font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    font-size: 32px;
+  font-weight: bold;
+  font-size: 32px;
 }
 
 
@@ -351,21 +349,6 @@
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.titulo-card4 {
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 44px;
-  /* or 122% */
-
-  text-align: center;
-  letter-spacing: -0.01em;
-
-  /* Black */
-
-  color: #131313;
-}
 
 .titulo-card5 {
   font-family: 'Montserrat', sans-serif;
@@ -380,34 +363,38 @@
   color: #131313;
 }
 
-  .subtitle-card5 {
+.subtitle-card5 {
   /* Body 20/Medium */
 
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 32px;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
 
-    color: #131313;
+  color: #131313;
 }
 
-  .oficialia-card5 {
+.oficialia-card5 {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 24px;
+  /* identical to box height, or 150% */
 
+  display: flex;
+  align-items: center;
   letter-spacing: 0.002em;
 
+  /* Black */
 
   color: #131313;
 
 
 }
 
-  .direccion-card5 {
+.direccion-card5 {
 
   /* Label 14/Regular */
 
@@ -422,7 +409,7 @@
 }
 
 
-  .contacto-card5 {
+.contacto-card5 {
 
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
@@ -438,53 +425,44 @@
   color: #131313;
 }
 
-  .enlace-card5 {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 20px;
-    /* identical to box height, or 143% */
+.enlace-card5 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
 
-    letter-spacing: 0.005em;
+  letter-spacing: 0.005em;
 
-    /* Gold */
+  /* Gold */
 
-    color: #B17A45;
+  color: #B17A45;
 
-  }
-
-  .paginaweb-card5 {
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
-    /* identical to box height, or 150% */
-
-    letter-spacing: 0.002em;
-
-    /* Black */
-
-    color: #131313;
-
-  }
-
-.custom-card {
-  padding: 20px;
 }
+
+.paginaweb-card5 {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.002em;
+
+  /* Black */
+
+  color: #131313;
+
+}
+
 
 .card-5 {
   max-width: 608px;
   max-height: 550px;
-  min-height: 550px;
   word-break: break-word;
   background-color: #F9FAFB;
-  overflow-wrap: break-word;
-}
-
-.text-container {
-  width: 100%;
 }
 
 .titulo-card5 {
@@ -497,19 +475,6 @@
 
 .oficialia-card5 {
   margin-bottom: 10px;
-}
-
-.oficialia-card4 {
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  /* or 150% */
-
-  text-align: center;
-
-  color: #000000;
 }
 
 .direccion-card5 {
@@ -540,20 +505,12 @@
 
 .card-content {
   text-align: left;
-  padding-left: 40px; /* Ajusta este valor según la cantidad de espacio deseada */
 }
 
 .icon-card5 {
   margin-right: 8px;
   vertical-align: middle;
 }
-
-.same-height-card {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
 
 .custom-button {
   width: 416px;
@@ -576,10 +533,6 @@
   margin-left: 8px;
 }
 
-.card-4-small {
-  max-width: 90%;
-  margin: 0 auto;
-}
 
 
 
@@ -629,31 +582,12 @@
     flex-direction: column;
   }
 }
-
-@media (max-width: 576px) {
-  .titulo-card5 {
-    font-size: 28px;
-    line-height: 32px;
-  }
-  .subtitle-card5,
-  .oficialia-card5,
-  .direccion-card5,
-  .contacto-card5,
-  .paginaweb-card5 {
-    font-size: 16px;
-    line-height: 20px;
-  }
-  .enlace-card5 {
-    font-size: 14px;
-    line-height: 16px;
-  }
-}
-
 /* Estilos para pantallas pequeñas */
 @media (max-width: 576px) {
   .titulo-card5,
   .subtitle-card5,
   .oficialia-card5,
+  .direccion-card5,
   .contacto-card5,
   .enlace-card5 {
     font-size: 0.8rem;
@@ -666,21 +600,42 @@
   .subtitle-card5,
   .oficialia-card5,
   .contacto-card5,
+  .direccion-card5,
   .enlace-card5 {
-    font-size: 0.9rem;
+    font-size: 0.5rem;
+  }
+}
+
+.margin-top-responsive {
+  margin-top: 80px;
+}
+
+/* Ajusta el margen cuando la pantalla se reduce a 768px o menos */
+@media (max-width: 768px) {
+  .margin-top-responsive {
+    margin-top: 20px;
   }
 }
 
 @media (max-width: 768px) {
-  .card-5 {
-    max-width: 100%;
-    padding: 10px;
+  .full-width-responsive {
+    width: 100% !important;
   }
 }
 
+
+/* Estilos para pantallas pequeñas */
 @media (max-width: 576px) {
-  .card-5 {
-    max-width: 100%;
-    padding: 5px;
+  .titulo-card4,
+  .oficialia-card4 {
+    font-size: 0.8rem;
+  }
+}
+
+/* Estilos para pantallas medianas */
+@media (min-width: 577px) and (max-width: 768px) {
+  .titulo-card4,
+  .oficialia-card4 {
+    font-size: 0.5rem;
   }
 }

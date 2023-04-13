@@ -1,6 +1,5 @@
 import React from 'react';
 import { IoPerson } from 'react-icons/io5';
-import ClampLines from 'react-clamp-lines';
 import { FaRegCalendarAlt, FaLaptop, FaMapMarkerAlt, FaQuestionCircle } from 'react-icons/fa';
 import { MdEmail, MdLocalPhone, MdLocationOn, MdLanguage } from 'react-icons/md';
 import {Container, Row, Col, Button, Card} from 'react-bootstrap';
@@ -62,8 +61,8 @@ function App() {
                             </h5>
                         </Col>
                     </Row>
-                    <Row className="d-flex flex-column flex-md-row align-items-center">
-                        <Col md={6}  className="mb-2">
+                    <Row className="d-flex flex-column flex-xl-row align-items-center">
+                        <Col xl={6} md={12} className="d-flex justify-content-center text-center ">
                             <img
                                 className="custom-image card-1 w-100"
                                 src={cardImg1}
@@ -71,43 +70,89 @@ function App() {
                                 onClick={() => window.open("http://www.bajacalifornia.gob.mx", "_blank")}
                             />
                         </Col>
-                        <Col md={3} className="mb-2">
-                            <Container>
-                            <img
-                                className="custom-image card-2 w-100"
-                                src={cardImg2}
-                                alt="Card 2"
-                                onClick={() => window.open("https://api.whatsapp.com", "_blank")}
-                            />
-                            </Container>
-                        </Col>
-                        <Col md={3} className="mb-2">
-                         <Container>
-                            <img
-                                className="custom-image card-3 w-100"
-                                src={cardImg3}
-                                alt="Card 3"
-                                onClick={() =>
-                                    window.open(
-                                        "https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger%2Ft%2F120544204635995",
-                                        "_blank"
-                                    )
-                                }
-                            />
-                         </Container>
+                        <Col xl={6} md={12} className="d-flex justify-content-center text-center ">
+                            <Row>
+                                <Col md={6}>
+                                    <Container>
+                                        <img
+                                            className="custom-image card-2 w-100"
+                                            src={cardImg2}
+                                            alt="Card 2"
+                                            onClick={() => window.open("https://api.whatsapp.com", "_blank")}
+                                        />
+                                    </Container>
+                                </Col>
+                                <Col md={6}>
+                                    <Container>
+                                        <img
+                                            className="custom-image card-3 w-100"
+                                            src={cardImg3}
+                                            alt="Card 3"
+                                            onClick={() =>
+                                                window.open(
+                                                    "https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger%2Ft%2F120544204635995",
+                                                    "_blank"
+                                                )
+                                            }
+                                        />
+                                    </Container>
+                                </Col>
+                            </Row>
                         </Col>
                     </Row>
 
                     <Row className="d-flex flex-column flex-xl-row align-items-center">
-                        <Col xl={6} md={12} className="mb-2">
-                            <Card className="custom-card card-5 same-height-card">
+                        <Col xl={6} md={12} className="d-flex justify-content-center text-center ">
+                            <Card className="custom-card card-5 same-height-card full-width-responsive">
                                 <Container>
-                                    <Card.Body className="card-content center-text">
-                                        <Card.Text className="titulo-card4">Atención a Quejas y Denuncias Ciudadanas</Card.Text>
-                                        <Card.Text className="oficialia-card4">
-                                            El Sistema de Atención a Quejas y Denuncias Ciudadanas es un sistema de la Secretaría de la Función Pública creado para registrar, captar, administrar, atender e investigar denuncias que cualquier persona formule en el marco de la Ley General de Responsabilidades Administrativas.
+                                    <Card.Body className="card-content text-center">
+                                        <Card.Title className="titulo-card4">
+                                            <div className="titulo-card4"
+                                                 style={{
+                                                     maxWidth: '509px',
+                                                     minHeight: '123px',
+                                                     display: 'flex',
+                                                     flexDirection: 'column',
+                                                     justifyContent: 'center',
+                                                     alignItems: 'center',
+                                                     fontFamily: 'Montserrat',
+                                                     fontStyle: 'normal',
+                                                     fontWeight: 700,
+                                                     fontSize: '36px',
+                                                     lineHeight: '44px',
+                                                     textAlign: 'center',
+                                                     letterSpacing: '-0.01em',
+                                                     color: '#131313',
+                                                 }}
+                                            >
+                                                Atención a Quejas y Denuncias Ciudadanas
+                                            </div>
+                                        </Card.Title>
+
+                                        <Card.Text >
+                                            <div className="titulo-card4"
+                                                 style={{
+                                                     maxWidth: '509px',
+                                                     minHeight: '123px',
+                                                     display: 'flex',
+                                                     flexDirection: 'column',
+                                                     justifyContent: 'center',
+                                                     alignItems: 'center',
+                                                     fontFamily: 'Montserrat',
+                                                     fontStyle: 'normal',
+                                                     fontWeight: 500,
+                                                     fontSize: '16px',
+                                                     lineHeight: '24px',
+                                                     textAlign: 'center',
+                                                 }}
+                                            >
+                                                El Sistema de Atención a Quejas y Denuncias Ciudadanas es un sistema de la
+                                                Secretaría de la Función Pública creado para registrar, captar, administrar,
+                                                atender e investigar denuncias que cualquier persona formule en el marco de
+                                                la Ley General de Responsabilidades Administrativas.
+                                            </div>
                                         </Card.Text>
-                                        <div style={{ marginTop: '150px' }}></div>
+                                        <div className="margin-top-responsive"></div>
                                         <button
                                             className="custom-button card-btn"
                                             onClick={() =>
@@ -120,28 +165,26 @@ function App() {
                                         >
                                             Ir a sitio SCTG
                                         </button>
-
                                     </Card.Body>
                                 </Container>
                             </Card>
+
                         </Col>
-                        <Col xl={6} md={12} className="d-flex justify-content-center text-center">
-                            <Card className="custom-card card-5 same-height-card">
+                        <Col xl={6} md={12} className="d-flex justify-content-center text-center ">
+                            <Card className="custom-card card-5 same-height-card full-width-responsive">
                                 <Container>
                                     <Card.Body className="card-content">
                                         <div className="text-container">
                                             <Card.Text className="titulo-card5">Ubícanos</Card.Text>
-                                            <Card.Subtitle className="mb-2 subtitle-card5">¡Estamos para ayudarte!</Card.Subtitle>
+                                            {/*   <Card.Subtitle className="mb-2 subtitle-card5">¡Estamos para ayudarte!</Card.Subtitle>*/}
                                             <Card.Text className="oficialia-card5">
                                                 <MdLocationOn className="icon-card5" />
-                                                <ClampLines
-                                                    text="Edificio Poder Ejecutivo Calzada Independencia #994 Centro Cívico y Comercial, Mexicali, Baja California, Mexico, 21000"
-                                                    id="oficialia-card5-text"
-                                                    lines={3}
-                                                    ellipsis="..."
-                                                    buttons={false}
-                                                    innerElement="span"
-                                                />
+                                                Oficialía Mayor del Gobierno del Estado
+                                            </Card.Text>
+                                            <Card.Text className="direccion-card5">
+
+                                                Edificio Poder Ejecutivo Calzada Independencia #994 Centro Cívico y Comercial, Mexicali, Baja California, Mexico, 21000
+
                                             </Card.Text>
                                             <Card.Text className="contacto-card5">
                                                 <MdEmail className="icon-card5" /> atencionciudadana@bajacalifornia.gob.mx
@@ -176,7 +219,7 @@ function App() {
                 </Row>
                 <Row className="gx-4 gy-4">
                     <Col xs={12} sm={6} md={6} lg={3} className="mb-4 d-flex justify-content-center">
-                            <Card
+                        <Card
                             className="card-6 h-100"
                             onClick={() =>
                                 window.open("https://citas.ebajacalifornia.gob.mx/", "_blank")
@@ -193,6 +236,7 @@ function App() {
                                     Agenda tu cita en la oficina de tu municipio más cercana para
                                     realizar el trámite o servicio que necesitas. ¡Te esperamos!
                                 </Card.Text>
+                                <div style={{ marginTop: '77px' }}></div>
                                 <Card.Link
                                     href="https://citas.ebajacalifornia.gob.mx/"
                                     target="_blank"
@@ -203,7 +247,7 @@ function App() {
                         </Card>
                     </Col>
                     <Col xs={12} sm={6} md={6} lg={3} className="mb-4 d-flex justify-content-center">
-                    <Card
+                        <Card
                             className="card-7 h-100"
                             onClick={() =>
                                 window.open(
@@ -234,7 +278,7 @@ function App() {
                         </Card>
                     </Col>
                     <Col xs={12} sm={6} md={6} lg={3} className="mb-4 d-flex justify-content-center">
-                     <Card
+                        <Card
                             className="card-8 h-100"
                             onClick={() =>
                                 window.open(
@@ -263,7 +307,7 @@ function App() {
                         </Card>
                     </Col>
                     <Col xs={12} sm={6} md={6} lg={3} className="mb-4 d-flex justify-content-center">
-                    <Card
+                        <Card
                             className="card-9 h-100"
                             onClick={() =>
                                 window.open(
@@ -303,44 +347,44 @@ function App() {
                         </Col>
                     </Row>
 
-                <Row className="social-icons">
-                    <Col className="social-icon-col">
-                        <a href="https://www.facebook.com/AgenciaDigitaldeBajaCalifornia" target="_blank" rel="noopener noreferrer" className="social-icon">
-                            <FaFacebookF size ="3x" />
-                            <p>Facebook</p>
-                        </a>
-                    </Col>
-                    <Col className="social-icon-col">
-                        <a href="https://www.instagram.com/BCGobierno/" target="_blank" rel="noopener noreferrer" className="social-icon">
-                            <FaInstagram size ="3x"/>
-                            <p>Instagram</p>
-                        </a>
-                    </Col>
-                    <Col className="social-icon-col">
-                        <a href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F120544204635995" target="_blank" rel="noopener noreferrer" className="social-icon">
-                            <FaFacebookMessenger size ="3x" />
-                            <p>Messenger</p>
-                        </a>
-                    </Col>
-                    <Col className="social-icon-col">
-                        <a href="https://twitter.com/bcgobierno" target="_blank" rel="noopener noreferrer" className="social-icon">
-                            <FaTwitter  size ="3x"/>
-                            <p>Twitter</p>
-                        </a>
-                    </Col>
-                    <Col className="social-icon-col">
-                        <a href="https://api.whatsapp.com/send/?phone=5216869009091&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="social-icon">
-                            <FaWhatsapp size ="3x"/>
-                            <p>WhatsApp</p>
-                        </a>
-                    </Col>
-                    <Col className="social-icon-col">
-                        <a href="/" target="_blank" rel="noopener noreferrer" className="social-icon">
-                            <FaYoutube size ="3x"/>
-                            <p>YouTube</p>
-                        </a>
-                    </Col>
-                </Row>
+                    <Row className="social-icons">
+                        <Col className="social-icon-col">
+                            <a href="https://www.facebook.com/AgenciaDigitaldeBajaCalifornia" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                <FaFacebookF size ="3x" />
+                                <p>Facebook</p>
+                            </a>
+                        </Col>
+                        <Col className="social-icon-col">
+                            <a href="https://www.instagram.com/BCGobierno/" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                <FaInstagram size ="3x"/>
+                                <p>Instagram</p>
+                            </a>
+                        </Col>
+                        <Col className="social-icon-col">
+                            <a href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F120544204635995" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                <FaFacebookMessenger size ="3x" />
+                                <p>Messenger</p>
+                            </a>
+                        </Col>
+                        <Col className="social-icon-col">
+                            <a href="https://twitter.com/bcgobierno" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                <FaTwitter  size ="3x"/>
+                                <p>Twitter</p>
+                            </a>
+                        </Col>
+                        <Col className="social-icon-col">
+                            <a href="https://api.whatsapp.com/send/?phone=5216869009091&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                <FaWhatsapp size ="3x"/>
+                                <p>WhatsApp</p>
+                            </a>
+                        </Col>
+                        <Col className="social-icon-col">
+                            <a href="/" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                <FaYoutube size ="3x"/>
+                                <p>YouTube</p>
+                            </a>
+                        </Col>
+                    </Row>
                     <Row className="my-5">
                         <Col>
                             <p className="copyright-text">
@@ -350,6 +394,125 @@ function App() {
                         </Col>
                     </Row>
                 </Container>
+                {/*   <Container>
+                                <Card
+                                    className="custom-card card-2 w-100"
+                                    onClick={() =>
+                                        window.open(
+                                            "https://api.whatsapp.com/send/?phone=5216869009091&text&type=phone_number&app_absent=0",
+                                            "_blank"
+                                        )
+                                    }
+                                    style={{ cursor: 'pointer' }}
+                                >
+                                    <Card.Body className="text-center">
+                                        <Card.Title
+                                            style={{
+                                                fontFamily: 'Montserrat',
+                                                fontStyle: 'normal',
+                                                fontWeight: 700,
+                                                fontSize: '36px',
+                                                lineHeight: '44px',
+                                                letterSpacing: '-0.01em',
+                                                color: '#131313',
+                                            }}
+                                        >
+                                            Whatsapp de Atención Ciudadana
+                                        </Card.Title>
+                                        <Card.Subtitle
+                                            className="mb-2"
+                                            style={{
+                                                fontFamily: 'Montserrat',
+                                                fontStyle: 'normal',
+                                                fontWeight: 400,
+                                                fontSize: '18px',
+                                                lineHeight: '28px',
+                                                color: '#16A34A',
+                                            }}
+                                        >
+                                            Obtén ayuda o información las 24 hrs
+                                        </Card.Subtitle>
+                                        <Card.Link
+                                            href="https://api.whatsapp.com/send/?phone=5216869009091&text&type=phone_number&app_absent=0"
+                                            target="_blank"
+                                            style={{
+                                                fontFamily: 'Montserrat',
+                                                fontStyle: 'normal',
+                                                fontWeight: 700,
+                                                fontSize: '14px',
+                                                lineHeight: '20px',
+                                                color: '#3C3C3B',
+                                            }}
+                                        >
+
+                                            Ir al WhatsApp
+                                            <FaWhatsapp />
+                                        </Card.Link>
+                                    </Card.Body>
+                                </Card>
+                            </Container>
+
+                        </Col>
+                        <Col md={3} className="mb-2">
+                            <Container>
+
+                                    <Card
+                                    className="custom-card card-3 w-100"
+                                    onClick={() =>
+                                        window.open(
+                                            "https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger%2Ft%2F120544204635995",
+                                            "_blank"
+                                        )
+                                    }
+                                    style={{ cursor: 'pointer' }}
+                                >
+                                    <Card.Body className="text-center">
+                                        <Card.Title
+                                            style={{
+                                                fontFamily: 'Montserrat',
+                                                fontStyle: 'normal',
+                                                fontWeight: 700,
+                                                fontSize: '36px',
+                                                lineHeight: '44px',
+                                                letterSpacing: '-0.01em',
+                                                color: '#131313',
+                                            }}
+                                        >
+                                            Messenger de Atención Ciudadana
+                                        </Card.Title>
+                                        <Card.Subtitle
+                                            className="mb-2"
+                                            style={{
+                                                fontFamily: 'Montserrat',
+                                                fontStyle: 'normal',
+                                                fontWeight: 400,
+                                                fontSize: '18px',
+                                                lineHeight: '28px',
+                                                color: '#F43F5E',
+                                            }}
+                                        >
+                                            Obtén ayuda o información las 24 hrs
+                                        </Card.Subtitle>
+                                        <Card.Link
+                                            href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger%2Ft%2F120544204635995"
+                                            target="_blank"
+                                            style={{
+                                                fontFamily: 'Montserrat',
+                                                fontStyle: 'normal',
+                                                fontWeight: 700,
+                                                fontSize: '14px',
+                                                lineHeight: '20px',
+                                                color: '#3C3C3B',
+                                            }}
+                                        >
+
+                                            Ir al Messenger
+                                            <FaFacebookMessenger />
+                                        </Card.Link>
+                                    </Card.Body>
+                                </Card>
+                            </Container>
+*/}
             </div>
         </>
 
