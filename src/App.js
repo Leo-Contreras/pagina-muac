@@ -78,7 +78,7 @@ function App() {
                                             className="custom-image card-2 w-100"
                                             src={cardImg2}
                                             alt="Card 2"
-                                            onClick={() => window.open("https://api.whatsapp.com", "_blank")}
+                                            onClick={() => window.open("https://api.whatsapp.com/send/?phone=5216869009091&text&type=phone_number&app_absent=0", "_blank")}
                                         />
                                     </Container>
                                 </Col>
@@ -379,7 +379,7 @@ function App() {
                             </a>
                         </Col>
                         <Col className="social-icon-col">
-                            <a href="/" target="_blank" rel="noopener noreferrer" className="social-icon">
+                            <a href="https://www.youtube.com/@gobiernodebajacalifornia718" target="_blank" rel="noopener noreferrer" className="social-icon">
                                 <FaYoutube size ="3x"/>
                                 <p>YouTube</p>
                             </a>
