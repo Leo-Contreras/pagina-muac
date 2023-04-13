@@ -10,10 +10,6 @@ import './App.css';
 import cardImg1 from './imagenes/card 1 img.png';
 import cardImg2 from './imagenes/card img 2.png';
 import cardImg3 from './imagenes/card img 3.png';
-import cardImg4 from './imagenes/card img 4.png';
-
-
-
 
 
 function App() {
@@ -65,82 +61,148 @@ function App() {
                             </h5>
                         </Col>
                     </Row>
-                    <Row>
-
-                        <Col md={6} className="mb-2">
+                    <Row className="d-flex flex-column flex-xl-row align-items-center">
+                        <Col xl={6} md={12} className="d-flex justify-content-center text-center ">
                             <img
                                 className="custom-image card-1 w-100"
                                 src={cardImg1}
                                 alt="Card 1"
-                                onClick={() =>
-                                    window.open("http://www.bajacalifornia.gob.mx", "_blank")
-                                }
+                                onClick={() => window.open("http://www.bajacalifornia.gob.mx", "_blank")}
                             />
                         </Col>
-                        <Col md={3} className="mb-2">
-                            <img
-                                className="custom-image card-2 w-100"
-                                src={cardImg2}
-                                alt="Card 2"
-                                onClick={() =>
-                                    window.open("https://api.whatsapp.com", "_blank")
-                                }
-                            />
-                        </Col>
-                        <Col md={3} className="mb-2">
-                            <img
-                                className="custom-image card-3 w-100"
-                                src={cardImg3}
-                                alt="Card 3"
-                                onClick={() =>
-                                    window.open(
-                                        "https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger                %2Ft%2F120544204635995",
-                                        "_blank"
-                                    )
-                                }
-                            />
+                        <Col xl={6} md={12} className="d-flex justify-content-center text-center ">
+                            <Row>
+                                <Col md={6}>
+                                    <Container>
+                                        <img
+                                            className="custom-image card-2 w-100"
+                                            src={cardImg2}
+                                            alt="Card 2"
+                                            onClick={() => window.open("https://api.whatsapp.com", "_blank")}
+                                        />
+                                    </Container>
+                                </Col>
+                                <Col md={6}>
+                                    <Container>
+                                        <img
+                                            className="custom-image card-3 w-100"
+                                            src={cardImg3}
+                                            alt="Card 3"
+                                            onClick={() =>
+                                                window.open(
+                                                    "https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger%2Ft%2F120544204635995",
+                                                    "_blank"
+                                                )
+                                            }
+                                        />
+                                    </Container>
+                                </Col>
+                            </Row>
                         </Col>
                     </Row>
-                    <Row>
-                        <Col md={6} className="mb-2">
-                            <img
-                                className="custom-image card-4 w-100"
-                                src={cardImg4}
-                                alt="Card 4"
-                                onClick={() =>
-                                    window.open(
-                                        "http://sctg.bajacalifornia.gob.mx:8080/quejas/queja.jsp",
-                                        "_blank"
-                                    )
-                                }
-                            />
-                        </Col>
-                        <Col md={6} className="d-flex justify-content-center text-center">
-                            <Card className="custom-card card-5">
+
+                    <Row className="d-flex flex-column flex-xl-row align-items-center">
+                        <Col xl={6} md={12} className="d-flex justify-content-center text-center ">
+                            <Card className="custom-card card-5 same-height-card full-width-responsive">
                                 <Container>
-                                  <Card.Body className="card-content">
-                                    <Card.Text className="titulo-card5">Ubícanos</Card.Text>
-                                    <Card.Subtitle className="mb-2 subtitle-card5">¡Estamos para ayudarte!</Card.Subtitle>
-                                    <Card.Text className="oficialia-card5">
-                                        <MdLocationOn className="icon-card5" /> Edificio Poder Ejecutivo Calzada Independencia #994 Centro Cívico y Comercial, Mexicali, Baja California, Mexico, 21000
-                                    </Card.Text>
-                                    <Card.Text className="contacto-card5">
-                                        <MdEmail className="icon-card5" /> atencionciudadana@bajacalifornia.gob.mx
-                                    </Card.Text>
-                                    <Card.Text className="contacto-card5">
-                                        <MdLocalPhone className="icon-card5" /> Teléfono: 686 900 90 91
-                                    </Card.Text>
-                                    <Card.Link className="enlace-card5" href="https://linktr.ee/atencionciudadanabc" target="_blank"><MdLanguage className="icon-card5" /> linktr.ee/atencionciudadanabc</Card.Link>
-                                      <button className="custom-button card-btn" onClick={downloadVCard}>
-                                          Guardar en mis Contactos
-                                          <span className="contact-icon">
-                                            <IoPerson />
-                                          </span>
-                                      </button>
-                                  </Card.Body>
+                                    <Card.Body className="card-content text-center">
+                                        <Card.Title className="titulo-card4">
+                                            <div className="titulo-card4"
+                                                style={{
+                                                    maxWidth: '509px',
+                                                    minHeight: '123px',
+                                                    display: 'flex',
+                                                    flexDirection: 'column',
+                                                    justifyContent: 'center',
+                                                    alignItems: 'center',
+                                                    fontFamily: 'Montserrat',
+                                                    fontStyle: 'normal',
+                                                    fontWeight: 700,
+                                                    fontSize: '36px',
+                                                    lineHeight: '44px',
+                                                    textAlign: 'center',
+                                                    letterSpacing: '-0.01em',
+                                                    color: '#131313',
+                                                }}
+                                            >
+                                                Atención a Quejas y Denuncias Ciudadanas
+                                            </div>
+                                        </Card.Title>
+
+                                        <Card.Text >
+                                            <div className="titulo-card4"
+                                                style={{
+                                                    maxWidth: '509px',
+                                                    minHeight: '123px',
+                                                    display: 'flex',
+                                                    flexDirection: 'column',
+                                                    justifyContent: 'center',
+                                                    alignItems: 'center',
+                                                    fontFamily: 'Montserrat',
+                                                    fontStyle: 'normal',
+                                                    fontWeight: 500,
+                                                    fontSize: '16px',
+                                                    lineHeight: '24px',
+                                                    textAlign: 'center',
+                                                }}
+                                            >
+                                                El Sistema de Atención a Quejas y Denuncias Ciudadanas es un sistema de la
+                                                Secretaría de la Función Pública creado para registrar, captar, administrar,
+                                                atender e investigar denuncias que cualquier persona formule en el marco de
+                                                la Ley General de Responsabilidades Administrativas.
+                                            </div>
+                                        </Card.Text>
+                                        <div className="margin-top-responsive"></div>
+                                        <button
+                                            className="custom-button card-btn"
+                                            onClick={() =>
+                                                window.open(
+                                                    "http://sctg.bajacalifornia.gob.mx:8080/quejas/queja.jsp",
+                                                    "_blank"
+                                                )
+                                            }
+                                            style={{ backgroundColor: "#6A1C32" }}
+                                        >
+                                            Ir a sitio SCTG
+                                        </button>
+                                    </Card.Body>
                                 </Container>
                             </Card>
 
+                        </Col>
+                        <Col xl={6} md={12} className="d-flex justify-content-center text-center ">
+                        <Card className="custom-card card-5 same-height-card full-width-responsive">
+                                <Container>
+                                    <Card.Body className="card-content">
+                                        <div className="text-container">
+                                            <Card.Text className="titulo-card5">Ubícanos</Card.Text>
+                                            {/*   <Card.Subtitle className="mb-2 subtitle-card5">¡Estamos para ayudarte!</Card.Subtitle>*/}
+                                            <Card.Text className="oficialia-card5">
+                                                <MdLocationOn className="icon-card5" />
+                                                Oficialía Mayor del Gobierno del Estado
+                                            </Card.Text>
+                                            <Card.Text className="direccion-card5">
+
+                                                    Edificio Poder Ejecutivo Calzada Independencia #994 Centro Cívico y Comercial, Mexicali, Baja California, Mexico, 21000
+
+                                            </Card.Text>
+                                            <Card.Text className="contacto-card5">
+                                                <MdEmail className="icon-card5" /> atencionciudadana@bajacalifornia.gob.mx
+                                            </Card.Text>
+                                            <Card.Text className="contacto-card5">
+                                                <MdLocalPhone className="icon-card5" /> Teléfono: 686 900 90 91
+                                            </Card.Text>
+                                            <Card.Link className="enlace-card5" href="https://linktr.ee/atencionciudadanabc" target="_blank"><MdLanguage className="icon-card5" /> linktr.ee/atencionciudadanabc</Card.Link>
+                                            <button className="custom-button card-btn" onClick={downloadVCard}>
+                                                Guardar en mis Contactos
+                                                <span className="contact-icon">
+                                                    <IoPerson />
+                                                  </span>
+                                            </button>
+                                        </div>
+                                    </Card.Body>
+                                </Container>
+                            </Card>
                         </Col>
                     </Row>
                 </Container>
@@ -174,6 +236,7 @@ function App() {
                                     Agenda tu cita en la oficina de tu municipio más cercana para
                                     realizar el trámite o servicio que necesitas. ¡Te esperamos!
                                 </Card.Text>
+                                <div style={{ marginTop: '77px' }}></div>
                                 <Card.Link
                                     href="https://citas.ebajacalifornia.gob.mx/"
                                     target="_blank"
@@ -331,6 +394,125 @@ function App() {
                         </Col>
                     </Row>
                 </Container>
+                {/*   <Container>
+                                <Card
+                                    className="custom-card card-2 w-100"
+                                    onClick={() =>
+                                        window.open(
+                                            "https://api.whatsapp.com/send/?phone=5216869009091&text&type=phone_number&app_absent=0",
+                                            "_blank"
+                                        )
+                                    }
+                                    style={{ cursor: 'pointer' }}
+                                >
+                                    <Card.Body className="text-center">
+                                        <Card.Title
+                                            style={{
+                                                fontFamily: 'Montserrat',
+                                                fontStyle: 'normal',
+                                                fontWeight: 700,
+                                                fontSize: '36px',
+                                                lineHeight: '44px',
+                                                letterSpacing: '-0.01em',
+                                                color: '#131313',
+                                            }}
+                                        >
+                                            Whatsapp de Atención Ciudadana
+                                        </Card.Title>
+                                        <Card.Subtitle
+                                            className="mb-2"
+                                            style={{
+                                                fontFamily: 'Montserrat',
+                                                fontStyle: 'normal',
+                                                fontWeight: 400,
+                                                fontSize: '18px',
+                                                lineHeight: '28px',
+                                                color: '#16A34A',
+                                            }}
+                                        >
+                                            Obtén ayuda o información las 24 hrs
+                                        </Card.Subtitle>
+                                        <Card.Link
+                                            href="https://api.whatsapp.com/send/?phone=5216869009091&text&type=phone_number&app_absent=0"
+                                            target="_blank"
+                                            style={{
+                                                fontFamily: 'Montserrat',
+                                                fontStyle: 'normal',
+                                                fontWeight: 700,
+                                                fontSize: '14px',
+                                                lineHeight: '20px',
+                                                color: '#3C3C3B',
+                                            }}
+                                        >
+
+                                            Ir al WhatsApp
+                                            <FaWhatsapp />
+                                        </Card.Link>
+                                    </Card.Body>
+                                </Card>
+                            </Container>
+
+                        </Col>
+                        <Col md={3} className="mb-2">
+                            <Container>
+
+                                    <Card
+                                    className="custom-card card-3 w-100"
+                                    onClick={() =>
+                                        window.open(
+                                            "https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger%2Ft%2F120544204635995",
+                                            "_blank"
+                                        )
+                                    }
+                                    style={{ cursor: 'pointer' }}
+                                >
+                                    <Card.Body className="text-center">
+                                        <Card.Title
+                                            style={{
+                                                fontFamily: 'Montserrat',
+                                                fontStyle: 'normal',
+                                                fontWeight: 700,
+                                                fontSize: '36px',
+                                                lineHeight: '44px',
+                                                letterSpacing: '-0.01em',
+                                                color: '#131313',
+                                            }}
+                                        >
+                                            Messenger de Atención Ciudadana
+                                        </Card.Title>
+                                        <Card.Subtitle
+                                            className="mb-2"
+                                            style={{
+                                                fontFamily: 'Montserrat',
+                                                fontStyle: 'normal',
+                                                fontWeight: 400,
+                                                fontSize: '18px',
+                                                lineHeight: '28px',
+                                                color: '#F43F5E',
+                                            }}
+                                        >
+                                            Obtén ayuda o información las 24 hrs
+                                        </Card.Subtitle>
+                                        <Card.Link
+                                            href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger%2Ft%2F120544204635995"
+                                            target="_blank"
+                                            style={{
+                                                fontFamily: 'Montserrat',
+                                                fontStyle: 'normal',
+                                                fontWeight: 700,
+                                                fontSize: '14px',
+                                                lineHeight: '20px',
+                                                color: '#3C3C3B',
+                                            }}
+                                        >
+
+                                            Ir al Messenger
+                                            <FaFacebookMessenger />
+                                        </Card.Link>
+                                    </Card.Body>
+                                </Card>
+                            </Container>
+*/}
             </div>
         </>
 
@@ -380,7 +562,5 @@ async function handleShare() {
         alert("La Web Share API no está soportada en este navegador.");
     }
 }
-
-
-
 export default App;
+
