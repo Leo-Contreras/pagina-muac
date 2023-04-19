@@ -30,24 +30,14 @@ function App() {
                 </Row>
                 <Row className="my-3">
                     <Col>
-                        <h1 className="header-2"> Modelo Único de</h1>
-                        <h1 className="header"> Atención Ciudadana BC </h1>
+                        <h1 className="header-2"> Bienvenidos al </h1>
+                        <h1 className="header"> Modelo Único de Atención Ciudadana BC </h1>
                     </Col>
                 </Row>
                 <Row className="my-3 stack-on-tablet">
-                    <Col md={6} xs={12} className="text-justify">
-                        <hr style={{ color: "white" }} />
-                        <h6 className="texto-bienvenida">
-                            Bienvenido al MUAC, donde estamos comprometidos en servirte de la
-                            mejor manera. Contamos con un equipo altamente capacitado para
-                            atenderte, resolver tus dudas e inquietudes. No dudes en
-                            contactarnos, estamos siempre a tu disposición para ayudarte.
-                            ¡Gracias por confiar en nosotros!
-                        </h6>
-                    </Col>
-                    <Col md={6} xs={12} className="text-center">
+
                         <img src={logoMuac} alt="Logo MUAC" className="logo-muac"/>
-                    </Col>
+
                 </Row>
             </Container>
 
