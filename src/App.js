@@ -17,7 +17,7 @@ function App() {
         <>
             <Container>
                 <Row className="align-items-center my-3">
-                    <Col xs="auto">
+                    <Col xs="auto" className="text-center text-md-start">
                         <a href="https://gestion.bajacalifornia.gob.mx/adbc/#">
                             <img src={logo} alt="Logo" className="logo logo-small" />
                         </a>
@@ -29,14 +29,15 @@ function App() {
                     </Col>
                 </Row>
                 <Row className="my-3">
-                    <Col className="col-12 col-md">
+                    <Col className="col-12 col-md text-center text-md-start">
                         <h1 className="header-2"> Bienvenidos al </h1>
                         <h1 className="header"> Modelo Único de Atención Ciudadana BC </h1>
                     </Col>
-                    <Col className="col-12 col-md">
+                    <Col className="col-12 col-md text-center text-md-start">
                         <img src={logoMuac} alt="Logo MUAC" className="logo-muac"/>
                     </Col>
                 </Row>
+
             </Container>
 
             <div className="grey-background">
@@ -199,6 +200,7 @@ function App() {
                                 <Card.Link
                                     href="https://citas.ebajacalifornia.gob.mx/"
                                     target="_blank"
+                                    className="custom-card-link"
                                 >
                                     Ir al sitio de Citas
                                 </Card.Link>
@@ -230,6 +232,7 @@ function App() {
                                 <Card.Link
                                     href="https://tramites.ebajacalifornia.gob.mx/ventanillaunica/"
                                     target="_blank"
+                                    className="custom-card-link"
                                 >
                                     Ir a Ventanilla digital
                                 </Card.Link>
@@ -259,6 +262,7 @@ function App() {
                                 <Card.Link
                                     href="http://appsweb.ebajacalifornia.gob.mx/sifos/kiosko/index"
                                     target="_blank"
+                                    className="custom-card-link"
                                 >
                                     Ubica los Kioskos
                                 </Card.Link>
@@ -288,6 +292,7 @@ function App() {
                                 <Card.Link
                                     href="https://www.bajacalifornia.gob.mx/Gobierno/FAQ"
                                     target="_blank"
+                                    className="custom-card-link"
                                 >
                                     Ir a Preguntas frecuentes
                                 </Card.Link>

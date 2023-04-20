@@ -655,3 +655,15 @@
     height: 2rem;
   }
 }
+
+
+
+.custom-card-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: inherit;
+}
+
+.custom-card-link:hover {
+  color: #B17A45;
+}
