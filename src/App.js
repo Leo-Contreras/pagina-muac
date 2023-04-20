@@ -29,15 +29,13 @@ function App() {
                     </Col>
                 </Row>
                 <Row className="my-3">
-                    <Col>
+                    <Col className="col-12 col-md">
                         <h1 className="header-2"> Bienvenidos al </h1>
                         <h1 className="header"> Modelo Único de Atención Ciudadana BC </h1>
                     </Col>
-                </Row>
-                <Row className="my-3 stack-on-tablet">
-
+                    <Col className="col-12 col-md">
                         <img src={logoMuac} alt="Logo MUAC" className="logo-muac"/>
-
+                    </Col>
                 </Row>
             </Container>
 
@@ -96,53 +94,19 @@ function App() {
                             <Card className="custom-card card-5 same-height-card full-width-responsive">
                                 <Container>
                                     <Card.Body className="card-content text-center">
-                                        <Card.Title className="titulo-card4">
-                                            <div className="titulo-card4"
-                                                 style={{
-                                                     maxWidth: '509px',
-                                                     minHeight: '123px',
-                                                     display: 'flex',
-                                                     flexDirection: 'column',
-                                                     justifyContent: 'center',
-                                                     alignItems: 'center',
-                                                     fontFamily: 'Montserrat',
-                                                     fontStyle: 'normal',
-                                                     fontWeight: 700,
-                                                     fontSize: '36px',
-                                                     lineHeight: '44px',
-                                                     textAlign: 'center',
-                                                     letterSpacing: '-0.01em',
-                                                     color: '#131313',
-                                                 }}
-                                            >
+                                        <Card.Title className="titulo-card5">
                                                 Atención a Quejas y Denuncias Ciudadanas
-                                            </div>
+
                                         </Card.Title>
 
-                                        <Card.Text >
-                                            <div className="titulo-card4"
-                                                 style={{
-                                                     maxWidth: '509px',
-                                                     minHeight: '123px',
-                                                     display: 'flex',
-                                                     flexDirection: 'column',
-                                                     justifyContent: 'center',
-                                                     alignItems: 'center',
-                                                     fontFamily: 'Montserrat',
-                                                     fontStyle: 'normal',
-                                                     fontWeight: 500,
-                                                     fontSize: '16px',
-                                                     lineHeight: '24px',
-                                                     textAlign: 'center',
-                                                 }}
-                                            >
+                                        <Card.Text className="direccion-card5" >
+
                                                 El Sistema de Atención a Quejas y Denuncias Ciudadanas es un sistema de la
                                                 Secretaría de la Función Pública creado para registrar, captar, administrar,
                                                 atender e investigar denuncias que cualquier persona formule en el marco de
                                                 la Ley General de Responsabilidades Administrativas.
-                                            </div>
                                         </Card.Text>
-                                        <div className="margin-top-responsive"></div>
+
                                         <button
                                             className="custom-button card-btn"
                                             onClick={() =>
@@ -340,37 +304,37 @@ function App() {
                     <Row className="social-icons">
                         <Col className="social-icon-col">
                             <a href="https://www.facebook.com/AgenciaDigitaldeBajaCalifornia" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                <FaFacebookF size ="3x" />
+                                <FaFacebookF className="icon" size="3x"/>
                                 <p>Facebook</p>
                             </a>
                         </Col>
                         <Col className="social-icon-col">
                             <a href="https://www.instagram.com/BCGobierno/" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                <FaInstagram size ="3x"/>
+                                <FaInstagram className="icon" size="3x" />
                                 <p>Instagram</p>
                             </a>
                         </Col>
                         <Col className="social-icon-col">
                             <a href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F120544204635995" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                <FaFacebookMessenger size ="3x" />
+                                <FaFacebookMessenger className="icon" size="3x" />
                                 <p>Messenger</p>
                             </a>
                         </Col>
                         <Col className="social-icon-col">
                             <a href="https://twitter.com/bcgobierno" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                <FaTwitter  size ="3x"/>
+                                <FaTwitter className="icon" size="3x"/>
                                 <p>Twitter</p>
                             </a>
                         </Col>
                         <Col className="social-icon-col">
                             <a href="https://api.whatsapp.com/send/?phone=5216869009091&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                <FaWhatsapp size ="3x"/>
+                                <FaWhatsapp className="icon" size="3x"/>
                                 <p>WhatsApp</p>
                             </a>
                         </Col>
                         <Col className="social-icon-col">
                             <a href="https://www.youtube.com/@gobiernodebajacalifornia718" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                <FaYoutube size ="3x"/>
+                                <FaYoutube className="icon" size="3x"/>
                                 <p>YouTube</p>
                             </a>
                         </Col>

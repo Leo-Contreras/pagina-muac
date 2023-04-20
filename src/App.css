@@ -40,7 +40,7 @@
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 800;
-  font-size: 36px;
+  font-size: 2rem;
   line-height: 44px;
   letter-spacing: -0.01em;
 
@@ -51,7 +51,7 @@
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 60px;
+  font-size: 3rem;
   line-height: 84px;
   letter-spacing: -0.02em;
 
@@ -299,12 +299,12 @@
 
 @media (max-width: 767px) {
   .header {
-    font-size: 40px;
-    line-height: 54px;
+    font-size: 1rem;
+    line-height: 20px;
   }
 
   .header-2 {
-    font-size: 24px;
+    font-size: 1rem;
     line-height: 30px;
   }
 
@@ -638,5 +638,20 @@
   .titulo-card4,
   .oficialia-card4 {
     font-size: 0.5rem;
+  }
+}
+
+
+
+
+.icon {
+  width: 6rem;
+  height: 6rem;
+}
+
+@media (max-width: 768px) {
+  .icon {
+    width: 2rem;
+    height: 2rem;
   }
 }
