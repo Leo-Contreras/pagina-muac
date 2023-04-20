@@ -93,18 +93,23 @@ function App() {
                         <Col xl={6} md={12} className="d-flex justify-content-center text-center ">
                             <Card className="custom-card card-5 same-height-card full-width-responsive">
                                 <Container>
-                                    <Card.Body className="card-content text-center">
+                                    <Card.Body className="card-content ">
                                         <Card.Title className="titulo-card5">
-                                                Atención a Quejas y Denuncias Ciudadanas
+                                               <h3 className="header-2"> Atención a Quejas y Denuncias Ciudadanas</h3>
 
                                         </Card.Title>
 
                                         <Card.Text className="direccion-card5" >
-
+                                            <br />
+                                            <br />
                                                 El Sistema de Atención a Quejas y Denuncias Ciudadanas es un sistema de la
                                                 Secretaría de la Función Pública creado para registrar, captar, administrar,
                                                 atender e investigar denuncias que cualquier persona formule en el marco de
                                                 la Ley General de Responsabilidades Administrativas.
+
+
+                                            <br />
+
                                         </Card.Text>
 
                                         <button
