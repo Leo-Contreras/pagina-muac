@@ -50,31 +50,31 @@ function App() {
                             </h5>
                         </Col>
                     </Row>
-                    <Row className="d-flex flex-column flex-xl-row align-items-center">
-                        <Col xl={6} md={12} className="d-flex justify-content-center text-center ">
+                    <Row className="flex-column flex-md-row align-items-center margin-padding">
+                        <Col md={6} className="d-flex justify-content-center text-center ">
                             <img
-                                className="custom-image card-1 w-100"
+                                className="custom-image card-1"
                                 src={cardImg1}
                                 alt="Card 1"
                                 onClick={() => window.open("http://www.bajacalifornia.gob.mx", "_blank")}
                             />
                         </Col>
-                        <Col xl={6} md={12} className="d-flex justify-content-center text-center ">
+                        <Col md={6} className="d-flex justify-content-center text-center ">
                             <Row>
-                                <Col md={6}>
+                                <Col sm={12} md={6} className="margin-padding">
                                     <Container>
                                         <img
-                                            className="custom-image card-2 w-100"
+                                            className="custom-image card-2"
                                             src={cardImg2}
                                             alt="Card 2"
                                             onClick={() => window.open("https://api.whatsapp.com/send/?phone=5216869009091&text&type=phone_number&app_absent=0", "_blank")}
                                         />
                                     </Container>
                                 </Col>
-                                <Col md={6}>
+                                <Col sm={12} md={6} className="margin-padding">
                                     <Container>
                                         <img
-                                            className="custom-image card-3 w-100"
+                                            className="custom-image card-3"
                                             src={cardImg3}
                                             alt="Card 3"
                                             onClick={() =>
@@ -90,8 +90,10 @@ function App() {
                         </Col>
                     </Row>
 
-                    <Row className="d-flex flex-column flex-xl-row align-items-center">
-                        <Col xl={6} md={12} className="d-flex justify-content-center text-center ">
+
+
+                    <Row className="flex-column flex-xl-row align-items-center margin-padding">
+                        <Col xl={6} md={12} className="d-flex justify-content-center text-center margin-padding">
                             <Card className="custom-card card-5 same-height-card full-width-responsive">
                                 <Container>
                                     <Card.Body className="card-content ">
@@ -130,7 +132,7 @@ function App() {
                             </Card>
 
                         </Col>
-                        <Col xl={6} md={12} className="d-flex justify-content-center text-center ">
+                        <Col xl={6} md={12} className="d-flex justify-content-center text-center margin-padding">
                             <Card className="custom-card card-5 same-height-card full-width-responsive">
                                 <Container>
                                     <Card.Body className="card-content">
