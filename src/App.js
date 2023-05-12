@@ -18,7 +18,7 @@ function App() {
             <Container>
                 <Row className="align-items-center my-3">
                     <Col xs="auto" className="text-center text-md-start">
-                        <a href="https://gestion.bajacalifornia.gob.mx/adbc/#">
+                        <a href="https://www.ventanillabc.bajacalifornia.gob.mx/">
                             <img src={logo} alt="Logo" className="logo logo-small" />
                         </a>
                     </Col>
@@ -51,7 +51,7 @@ function App() {
                         </Col>
                     </Row>
                     <Row className="flex-column flex-md-row align-items-center g-4">
-                        <Col md={6} className="d-flex justify-content-center text-center ">
+                        <Col lg ={6} md={12} className="d-flex justify-content-center text-center ">
                             <img
                                 className="custom-image card-1 card-size"
                                 src={cardImg1}
@@ -59,9 +59,9 @@ function App() {
                                 onClick={() => window.open("http://www.bajacalifornia.gob.mx", "_blank")}
                             />
                         </Col>
-                        <Col md={6} className="d-flex justify-content-center text-center ">
+                        <Col lg = {6} md={12} className="d-flex justify-content-center text-center ">
                          <Row className="flex-column flex-md-row align-items-center g-4">
-                            <Col sm={12} md={6} className="d-flex justify-content-center text-center p-3">
+                            <Col sm={12} md={6} lg={6} className="d-flex justify-content-center text-center p-3">
                                     <img
                                         className="custom-image card-2 card-size"
                                         src={cardImg2}
@@ -69,7 +69,7 @@ function App() {
                                         onClick={() => window.open("https://api.whatsapp.com/send/?phone=5216869009091&text&type=phone_number&app_absent=0", "_blank")}
                                     />
                                 </Col>
-                                <Col sm={12} md={6} className="d-flex justify-content-center text-center p-3">
+                                <Col sm={12} md={6} lg={6} className="d-flex justify-content-center text-center p-3">
                                     <img
                                         className="custom-image card-3 card-size"
                                         src={cardImg3}
@@ -89,7 +89,7 @@ function App() {
 
 
 
-                        <Col xl={6} md={12} className="d-flex justify-content-center text-center margin-padding p-3">
+                        <Col xl={6} lg = {12} md={12} className="d-flex justify-content-center text-center margin-padding p-3">
                             <Card className="custom-card card-5 same-height-card full-width-responsive">
                                 <Container>
                                     <Card.Body className="card-content ">
@@ -513,7 +513,7 @@ async function handleShare() {
             await navigator.share({
                 title: "Comparte este enlace",
                 text: "Echa un vistazo a este enlace: ",
-                url: "https://www.ejemplo.com",
+                url: "https://muac.bajacalifornia.gob.mx/",
             });
             console.log("Contenido compartido exitosamente");
         } catch (err) {
