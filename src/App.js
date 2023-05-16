@@ -1,13 +1,12 @@
 import React from 'react';
 import { IoPerson } from 'react-icons/io5';
-import { FaRegCalendarAlt, FaLaptop, FaMapMarkerAlt, FaQuestionCircle } from 'react-icons/fa';
+import { FaRegCalendarAlt, FaLaptop, FaMapMarkerAlt, FaQuestionCircle, FaArrowRight  } from 'react-icons/fa';
 import { MdEmail, MdLocalPhone, MdLocationOn, MdLanguage } from 'react-icons/md';
 import {Container, Row, Col, Button, Card} from 'react-bootstrap';
 import logo from './imagenes/logo adbc png.png';
 import logoMuac from './imagenes/BC-MUAC-mobile@4k - copia.jpg';
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube, FaWhatsapp, FaFacebookMessenger } from 'react-icons/fa';
 import './App.css';
-import cardImg1 from './imagenes/card 1 img.png';
 import cardImg2 from './imagenes/card img 2.png';
 import cardImg3 from './imagenes/card img 3.png';
 
@@ -52,18 +51,32 @@ function App() {
                     </Row>
                     <Row className="flex-column flex-md-row align-items-center g-4">
                         <Col lg ={6} md={12} className="d-flex justify-content-center text-center ">
-                            <img
+                            {/*  <img
                                 className="custom-image card-1 card-size"
                                 src={cardImg1}
                                 alt="Card 1"
                                 onClick={() => window.open("http://www.bajacalifornia.gob.mx", "_blank")}
                             />
+                            */}
+
+                            <Card bg="dark" key="Dark" text="white" className="custom-card card-1 text-center">
+                                <Card.Header> Sitio web oficial del Gobierno del Estado de Baja California</Card.Header>
+                                <Card.Title>
+                                    http://www.bajacalifornia.gob.mx
+                                </Card.Title>
+                                <Card.Link href="http://www.bajacalifornia.gob.mx" target="_blank" className="link-text">
+                                    <FaArrowRight className="link-icon" /> Ir al sitio oficial
+                                </Card.Link>
+                            </Card>
+
+
+
                         </Col>
                         <Col lg = {6} md={12} className="d-flex justify-content-center text-center ">
                          <Row className="flex-column flex-md-row align-items-center g-4">
                             <Col sm={12} md={6} lg={6} className="d-flex justify-content-center text-center p-3">
                                     <img
-                                        className="custom-image card-2 card-size"
+                                        className="custom-image card-2"
                                         src={cardImg2}
                                         alt="Card 2"
                                         onClick={() => window.open("https://api.whatsapp.com/send/?phone=5216869009091&text&type=phone_number&app_absent=0", "_blank")}
@@ -90,7 +103,7 @@ function App() {
 
 
                         <Col xl={6} lg = {12} md={12} className="d-flex justify-content-center text-center margin-padding p-3">
-                            <Card className="custom-card card-5 same-height-card full-width-responsive">
+                            <Card className="custom-card card-4 full-width-responsive">
                                 <Container>
                                     <Card.Body className="card-content ">
                                         <Card.Title className="titulo-card5">
@@ -216,12 +229,12 @@ function App() {
                             }
                         >
                             <Card.Body className="d-flex flex-column">
-                                <Card.Title>
+                                <Card.Text>
                                     <FaLaptop />
                                     <h1>
                                         <strong>Trámites Digitales</strong>{" "}
                                     </h1>
-                                </Card.Title>
+                                </Card.Text>
                                 <Card.Text className="text-justify flex-grow-1">
                                     ¡Te invitamos a descubrir nuestros nuevos servicios en línea!
                                     Ahora podrás realizar más servicios desde la comodidad de tu
@@ -248,12 +261,12 @@ function App() {
                             }
                         >
                             <Card.Body className="d-flex flex-column">
-                                <Card.Title>
+                                <Card.Text>
                                     <FaMapMarkerAlt />
                                     <h1>
                                         <strong>Kioskos Multi-Servicios </strong>
                                     </h1>
-                                </Card.Title>
+                                </Card.Text>
                                 <Card.Text className="flex-grow-1">
                                     Son cajeros automáticos que están distribuidos en los cinco municipios de la entidad para que puedas realizar tus trámites y pagos de manera ágil.
                                 </Card.Text>
@@ -278,12 +291,12 @@ function App() {
                             }
                         >
                             <Card.Body className="d-flex flex-column">
-                                <Card.Title>
+                                <Card.Text>
                                     <FaQuestionCircle />
                                     <h1>
                                         <strong>Preguntas frecuentes</strong>{" "}
                                     </h1>
-                                </Card.Title>
+                                </Card.Text>
                                 <Card.Text className="text-justify flex-grow-1">
                                     Aquí encontrarás las preguntas más frecuentes de los ciudadanos sobre los trámites de Control Vehicular (Placas), Licencias de Conducir e Impuestos que ofrece la Secretaría de Hacienda.
                                 </Card.Text>
