@@ -10,7 +10,7 @@ import {
     FaEnvelope, FaShareAlt
 } from 'react-icons/fa';
 import { MdEmail, MdLocalPhone, MdLocationOn } from 'react-icons/md';
-import {Container, Row, Col, Card, Dropdown} from 'react-bootstrap';
+import {Container, Row, Col, Card} from 'react-bootstrap';
 import MediaQuery from 'react-responsive';
 import logo from './imagenes/logo-adbc-png.webp';
 import logoMuac from './imagenes/BC-MUAC-mobile@4k - copia.jpg';
@@ -26,7 +26,7 @@ function App() {
             <Container>
                 <Row className="align-items-center my-3">
                     <Col xs={12} sm={6} className="text-center text-md-start mb-3 mb-md-0">
-                        <a href="https://www.ventanillabc.bajacalifornia.gob.mx/">
+                        <a href="http://www.bajacalifornia.gob.mx/">
                             <img src={logo} alt="Logo" className="logo logo-small" />
                         </a>
                     </Col>
@@ -59,40 +59,31 @@ function App() {
                             </a>
                         </MediaQuery>
                         <MediaQuery maxDeviceWidth={991}>
-                            {/* Contenido visible en dispositivos más pequeños */}
-                            <div className="dropdown-button">
-                                <Dropdown >
-                                    <Dropdown.Toggle variant="danger" id="dropdown-basic">
-                                        Contactanos
-                                    </Dropdown.Toggle>
-                                    <Dropdown.Menu>
-                                        <Dropdown.Item href="https://www.facebook.com/BC.Gobierno/?locale=es_LA" target="_blank" rel="noopener noreferrer">
-                                            <FaFacebookF /> Facebook
-                                        </Dropdown.Item>
-                                        <Dropdown.Item href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F120544204635995" target="_blank" rel="noopener noreferrer">
-                                            <FaFacebookMessenger /> Messenger
-                                        </Dropdown.Item>
-                                        <Dropdown.Item href="https://api.whatsapp.com/send/?phone=5216869009091&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
-                                            <FaWhatsapp /> WhatsApp
-                                        </Dropdown.Item>
-                                        <Dropdown.Item href="https://twitter.com/bcgobierno" target="_blank" rel="noopener noreferrer">
-                                            <FaTwitter /> Twitter
-                                        </Dropdown.Item>
-                                        <Dropdown.Item href="https://www.instagram.com/BCGobierno/" target="_blank" rel="noopener noreferrer">
-                                            <FaInstagram /> Instagram
-                                        </Dropdown.Item>
-                                        <Dropdown.Item href="mailto:atencionciudadana@bajacalifornia.gob.mx" target="_blank" rel="noopener noreferrer">
-                                            <FaEnvelope /> Correo
-                                        </Dropdown.Item>
-                                        <Dropdown.Item href="tel:+526869009091" target="_blank" rel="noopener noreferrer">
-                                            <FaPhone /> Teléfono
-                                        </Dropdown.Item>
-                                        <Dropdown.Item onClick={handleShare}>
-                                            <FaShareAlt /> Compartir
-                                        </Dropdown.Item>
-                                    </Dropdown.Menu>
-                                </Dropdown>
-                            </div>
+
+                            <a href="https://www.facebook.com/BC.Gobierno/?locale=es_LA" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                <FaFacebookF className="small-icon-smaller"/>
+                            </a>
+                            <a href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F120544204635995" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                <FaFacebookMessenger className="small-icon-smaller" />
+                            </a>
+                            <a href="https://api.whatsapp.com/send/?phone=5216869009091&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                <FaWhatsapp className="small-icon-smaller"/>
+                            </a>
+                            <a href="https://twitter.com/bcgobierno" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                <FaTwitter className="small-icon-smaller"/>
+                            </a>
+                            <a href="https://www.instagram.com/BCGobierno/" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                <FaInstagram className="small-icon-smaller"/>
+                            </a>
+                            <a href="mailto:atencionciudadana@bajacalifornia.gob.mx" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                <FaEnvelope className="small-icon-smaller"/>
+                            </a>
+                            <a href="tel:+526869009091" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                <FaPhone className="small-icon-smaller"/>
+                            </a>
+                            <a href="/#" onClick={handleShare} className="social-icon">
+                                <FaShareAlt className="small-icon-smaller"/>
+                            </a>
                         </MediaQuery>
                         {/* <Button className="share-button hide-on-mobile" onClick={handleShare}>
                             Compartir

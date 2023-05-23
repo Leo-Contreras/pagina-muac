@@ -8,9 +8,9 @@
   font-weight: bold;
   margin-right: 10px;
 }
-.dropdown-button {
-  display: flex;
-  justify-content: center;
+.small-icon-smaller {
+  width: 20px;
+  height: 20px;
 }
 
 .small-icon {
