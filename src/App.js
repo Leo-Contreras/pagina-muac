@@ -1,7 +1,7 @@
 import React from 'react';
 import { IoPerson } from 'react-icons/io5';
 import { FaRegCalendarAlt, FaLaptop, FaMapMarkerAlt, FaQuestionCircle, FaArrowRight  } from 'react-icons/fa';
-import { MdEmail, MdLocalPhone, MdLocationOn, MdLanguage } from 'react-icons/md';
+import { MdEmail, MdLocalPhone, MdLocationOn } from 'react-icons/md';
 import {Container, Row, Col, Button, Card} from 'react-bootstrap';
 import logo from './imagenes/logo adbc png.png';
 import logoMuac from './imagenes/BC-MUAC-mobile@4k - copia.jpg';
@@ -163,7 +163,7 @@ function App() {
                                             <Card.Text className="contacto-card5">
                                                 <MdLocalPhone className="icon-card5" /> Teléfono: 686 900 90 91
                                             </Card.Text>
-                                            <Card.Link className="enlace-card5" href="https://linktr.ee/atencionciudadanabc" target="_blank"><MdLanguage className="icon-card5" /> linktr.ee/atencionciudadanabc</Card.Link>
+                                            <Card.Link className="enlace-card5" href="https://goo.gl/maps/HUruXa2yrziLphht5" target="_blank"> <MdLocationOn className="icon-card5" />Ubicación </Card.Link>
                                             <button className="custom-button card-btn" onClick={downloadVCard}>
                                                 Guardar en mis Contactos
                                                 <span className="contact-icon">
