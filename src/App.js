@@ -325,37 +325,37 @@ function App() {
                     <Row className="social-icons">
                         <Col className="social-icon-col">
                             <a href="https://www.facebook.com/AgenciaDigitaldeBajaCalifornia" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                <FaFacebookF className="icon" size="3x"/>
+                                <FaFacebookF className="icon" size="3em"/>
                                 <p>Facebook</p>
                             </a>
                         </Col>
                         <Col className="social-icon-col">
                             <a href="https://www.instagram.com/BCGobierno/" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                <FaInstagram className="icon" size="3x" />
+                                <FaInstagram className="icon" size="3em" />
                                 <p>Instagram</p>
                             </a>
                         </Col>
                         <Col className="social-icon-col">
                             <a href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F120544204635995" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                <FaFacebookMessenger className="icon" size="3x" />
+                                <FaFacebookMessenger className="icon" size="3em" />
                                 <p>Messenger</p>
                             </a>
                         </Col>
                         <Col className="social-icon-col">
                             <a href="https://twitter.com/bcgobierno" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                <FaTwitter className="icon" size="3x"/>
+                                <FaTwitter className="icon" size="3em"/>
                                 <p>Twitter</p>
                             </a>
                         </Col>
                         <Col className="social-icon-col">
                             <a href="https://api.whatsapp.com/send/?phone=5216869009091&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                <FaWhatsapp className="icon" size="3x"/>
+                                <FaWhatsapp className="icon" size="3em"/>
                                 <p>WhatsApp</p>
                             </a>
                         </Col>
                         <Col className="social-icon-col">
                             <a href="https://www.youtube.com/@gobiernodebajacalifornia718" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                <FaYoutube className="icon" size="3x"/>
+                                <FaYoutube className="icon" size="3em"/>
                                 <p>YouTube</p>
                             </a>
                         </Col>
