@@ -3,12 +3,12 @@ import { IoPerson } from 'react-icons/io5';
 import { FaRegCalendarAlt, FaLaptop, FaMapMarkerAlt, FaQuestionCircle, FaArrowRight  } from 'react-icons/fa';
 import { MdEmail, MdLocalPhone, MdLocationOn } from 'react-icons/md';
 import {Container, Row, Col, Button, Card} from 'react-bootstrap';
-import logo from './imagenes/logo adbc png.png';
+import logo from './imagenes/logo-adbc-png.webp';
 import logoMuac from './imagenes/BC-MUAC-mobile@4k - copia.jpg';
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube, FaWhatsapp, FaFacebookMessenger } from 'react-icons/fa';
 import './App.css';
-import cardImg2 from './imagenes/card img 2.png';
-import cardImg3 from './imagenes/card img 3.png';
+import cardImg2 from './imagenes/card-img-2.webp';
+import cardImg3 from './imagenes/card-img-3.webp';
 
 
 function App() {
