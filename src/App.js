@@ -32,54 +32,36 @@ function App() {
                     </Col>
                     <Col xs={12} lg={6} className="d-flex flex-wrap justify-content-sm-end align-items-center">
                         <MediaQuery minDeviceWidth={992}>
-                            <a href="https://www.facebook.com/BC.Gobierno/?locale=es_LA" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                <FaFacebookF className="small-icon"/>
-                            </a>
-                            <a href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F120544204635995" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                <FaFacebookMessenger className="small-icon" />
+                            <a href="tel:+526869009091" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                <FaPhone className="small-icon"/>
                             </a>
                             <a href="https://api.whatsapp.com/send/?phone=5216869009091&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="social-icon">
                                 <FaWhatsapp className="small-icon"/>
                             </a>
-                            <a href="https://twitter.com/bcgobierno" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                <FaTwitter className="small-icon"/>
-                            </a>
-                            <a href="https://www.instagram.com/BCGobierno/" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                <FaInstagram className="small-icon"/>
+                            <a href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F120544204635995" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                <FaFacebookMessenger className="small-icon" />
                             </a>
                             <a href="mailto:atencionciudadana@bajacalifornia.gob.mx" target="_blank" rel="noopener noreferrer" className="social-icon">
                                 <FaEnvelope className="small-icon"/>
                             </a>
-                            <a href="tel:+526869009091" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                <FaPhone className="small-icon"/>
-                            </a>
-
                             <a href="/#" onClick={handleShare} className="social-icon">
                                 <FaShareAlt className="small-icon"/>
                             </a>
                         </MediaQuery>
                         <MediaQuery maxDeviceWidth={991}>
 
-                            <a href="https://www.facebook.com/BC.Gobierno/?locale=es_LA" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                <FaFacebookF className="small-icon-smaller"/>
-                            </a>
-                            <a href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F120544204635995" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                <FaFacebookMessenger className="small-icon-smaller" />
+                            <a href="tel:+526869009091" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                <FaPhone className="small-icon-smaller"/>
                             </a>
                             <a href="https://api.whatsapp.com/send/?phone=5216869009091&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="social-icon">
                                 <FaWhatsapp className="small-icon-smaller"/>
                             </a>
-                            <a href="https://twitter.com/bcgobierno" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                <FaTwitter className="small-icon-smaller"/>
+                            <a href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F120544204635995" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                <FaFacebookMessenger className="small-icon-smaller" />
                             </a>
-                            <a href="https://www.instagram.com/BCGobierno/" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                <FaInstagram className="small-icon-smaller"/>
-                            </a>
+
                             <a href="mailto:atencionciudadana@bajacalifornia.gob.mx" target="_blank" rel="noopener noreferrer" className="social-icon">
                                 <FaEnvelope className="small-icon-smaller"/>
-                            </a>
-                            <a href="tel:+526869009091" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                <FaPhone className="small-icon-smaller"/>
                             </a>
                             <a href="/#" onClick={handleShare} className="social-icon">
                                 <FaShareAlt className="small-icon-smaller"/>
