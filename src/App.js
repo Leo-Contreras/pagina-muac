@@ -533,8 +533,13 @@ async function handleShare() {
             console.error("Error al compartir:", err);
         }
     } else {
-        // Alternativa para navegadores que no soportan la Web Share API
-        alert("La Web Share API no está soportada en este navegador.");
+        try {
+            // Fallback a copiar al portapapeles
+            await navigator.clipboard.writeText("https://muac.bajacalifornia.gob.mx/");
+            console.log("Enlace copiado al portapapeles");
+        } catch (err) {
+            console.error("Error al copiar al portapapeles:", err);
+        }
     }
 }
 export default App;
