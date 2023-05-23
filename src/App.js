@@ -54,7 +54,7 @@ function App() {
                                 <FaPhone className="small-icon"/>
                             </a>
 
-                            <a onClick={handleShare} className="social-icon">
+                            <a href="/#" onClick={handleShare} className="social-icon">
                                 <FaShareAlt className="small-icon"/>
                             </a>
                         </MediaQuery>
