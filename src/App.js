@@ -1,8 +1,17 @@
 import React from 'react';
 import { IoPerson } from 'react-icons/io5';
-import { FaRegCalendarAlt, FaLaptop, FaMapMarkerAlt, FaQuestionCircle, FaArrowRight  } from 'react-icons/fa';
+import {
+    FaRegCalendarAlt,
+    FaLaptop,
+    FaMapMarkerAlt,
+    FaQuestionCircle,
+    FaArrowRight,
+    FaPhone,
+    FaEnvelope, FaShareAlt
+} from 'react-icons/fa';
 import { MdEmail, MdLocalPhone, MdLocationOn } from 'react-icons/md';
-import {Container, Row, Col, Button, Card} from 'react-bootstrap';
+import {Container, Row, Col, Card, Dropdown} from 'react-bootstrap';
+import MediaQuery from 'react-responsive';
 import logo from './imagenes/logo-adbc-png.webp';
 import logoMuac from './imagenes/BC-MUAC-mobile@4k - copia.jpg';
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube, FaWhatsapp, FaFacebookMessenger } from 'react-icons/fa';
@@ -16,15 +25,79 @@ function App() {
         <>
             <Container>
                 <Row className="align-items-center my-3">
-                    <Col xs="auto" className="text-center text-md-start">
+                    <Col xs={12} sm={6} className="text-center text-md-start mb-3 mb-md-0">
                         <a href="https://www.ventanillabc.bajacalifornia.gob.mx/">
                             <img src={logo} alt="Logo" className="logo logo-small" />
                         </a>
                     </Col>
-                    <Col className="text-end">
-                        <Button className="share-button hide-on-mobile" onClick={handleShare}>
+                    <Col xs={12} lg={6} className="d-flex flex-wrap justify-content-sm-end align-items-center">
+                        <MediaQuery minDeviceWidth={992}>
+                            <a href="https://www.facebook.com/BC.Gobierno/?locale=es_LA" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                <FaFacebookF className="small-icon"/>
+                            </a>
+                            <a href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F120544204635995" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                <FaFacebookMessenger className="small-icon" />
+                            </a>
+                            <a href="https://api.whatsapp.com/send/?phone=5216869009091&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                <FaWhatsapp className="small-icon"/>
+                            </a>
+                            <a href="https://twitter.com/bcgobierno" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                <FaTwitter className="small-icon"/>
+                            </a>
+                            <a href="https://www.instagram.com/BCGobierno/" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                <FaInstagram className="small-icon"/>
+                            </a>
+                            <a href="mailto:atencionciudadana@bajacalifornia.gob.mx" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                <FaEnvelope className="small-icon"/>
+                            </a>
+                            <a href="tel:+526869009091" target="_blank" rel="noopener noreferrer" className="social-icon">
+                                <FaPhone className="small-icon"/>
+                            </a>
+
+                            <a onClick={handleShare} className="social-icon">
+                                <FaShareAlt className="small-icon"/>
+                            </a>
+                        </MediaQuery>
+                        <MediaQuery maxDeviceWidth={991}>
+                            {/* Contenido visible en dispositivos más pequeños */}
+                            <div className="dropdown-button">
+                                <Dropdown >
+                                    <Dropdown.Toggle variant="danger" id="dropdown-basic">
+                                        Contactanos
+                                    </Dropdown.Toggle>
+                                    <Dropdown.Menu>
+                                        <Dropdown.Item href="https://www.facebook.com/BC.Gobierno/?locale=es_LA" target="_blank" rel="noopener noreferrer">
+                                            <FaFacebookF /> Facebook
+                                        </Dropdown.Item>
+                                        <Dropdown.Item href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F120544204635995" target="_blank" rel="noopener noreferrer">
+                                            <FaFacebookMessenger /> Messenger
+                                        </Dropdown.Item>
+                                        <Dropdown.Item href="https://api.whatsapp.com/send/?phone=5216869009091&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+                                            <FaWhatsapp /> WhatsApp
+                                        </Dropdown.Item>
+                                        <Dropdown.Item href="https://twitter.com/bcgobierno" target="_blank" rel="noopener noreferrer">
+                                            <FaTwitter /> Twitter
+                                        </Dropdown.Item>
+                                        <Dropdown.Item href="https://www.instagram.com/BCGobierno/" target="_blank" rel="noopener noreferrer">
+                                            <FaInstagram /> Instagram
+                                        </Dropdown.Item>
+                                        <Dropdown.Item href="mailto:atencionciudadana@bajacalifornia.gob.mx" target="_blank" rel="noopener noreferrer">
+                                            <FaEnvelope /> Correo
+                                        </Dropdown.Item>
+                                        <Dropdown.Item href="tel:+526869009091" target="_blank" rel="noopener noreferrer">
+                                            <FaPhone /> Teléfono
+                                        </Dropdown.Item>
+                                        <Dropdown.Item onClick={handleShare}>
+                                            <FaShareAlt /> Compartir
+                                        </Dropdown.Item>
+                                    </Dropdown.Menu>
+                                </Dropdown>
+                            </div>
+                        </MediaQuery>
+                        {/* <Button className="share-button hide-on-mobile" onClick={handleShare}>
                             Compartir
                         </Button>
+                        */}
                     </Col>
                 </Row>
                 <Row className="my-3">
@@ -223,7 +296,7 @@ function App() {
                             className="card-7 h-100"
                             onClick={() =>
                                 window.open(
-                                    "https://tramites.ebajacalifornia.gob.mx/ventanillaunica/",
+                                    "https://www.ventanillabc.bajacalifornia.gob.mx/",
                                     "_blank"
                                 )
                             }
@@ -241,11 +314,11 @@ function App() {
                                     hogar y sin necesidad de hacer filas.
                                 </Card.Text>
                                 <Card.Link
-                                    href="https://tramites.ebajacalifornia.gob.mx/ventanillaunica/"
+                                    href="https://www.ventanillabc.bajacalifornia.gob.mx/"
                                     target="_blank"
                                     className="custom-card-link"
                                 >
-                                    Ir a Ventanilla digital
+                                    Ir a Ventanilla Única
                                 </Card.Link>
                             </Card.Body>
                         </Card>
@@ -324,7 +397,7 @@ function App() {
 
                     <Row className="social-icons">
                         <Col className="social-icon-col">
-                            <a href="https://www.facebook.com/AgenciaDigitaldeBajaCalifornia" target="_blank" rel="noopener noreferrer" className="social-icon">
+                            <a href="https://www.facebook.com/BC.Gobierno/?locale=es_LA" target="_blank" rel="noopener noreferrer" className="social-icon">
                                 <FaFacebookF className="icon" size="3em"/>
                                 <p>Facebook</p>
                             </a>
