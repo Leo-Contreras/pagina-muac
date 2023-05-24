@@ -1,0 +1,39 @@
+/* src/components/PiePagina.css */
+
+
+.enlaces-footer:hover {
+    color: #b17a45;
+    text-decoration: none;
+
+}
+
+.small-text {
+    font-size: 0.75rem; /* Ajusta este valor según lo necesites */
+}
+
+.larger-text {
+    font-size: 1.00rem !important; /* Ajusta este valor según lo necesites */
+}
+.bg-gold {
+    background-color: rgb(177, 122, 69);
+}
+
+
+
+
+
+.bg-3f3f3d {
+    background-color: #3f3f3d;
+
+}
+
+.bg-6a1c32 {
+    background-color: #6a1c32;
+}
+
+.enlaces-footer {
+    color: white;
+    transition: color 0.2s ease-in-out;
+    font-size: 12px; /* Ajusta este valor según tus necesidades */
+
+}

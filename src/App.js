@@ -14,10 +14,11 @@ import {Container, Row, Col, Card} from 'react-bootstrap';
 import MediaQuery from 'react-responsive';
 import logo from './imagenes/logo-adbc-png.webp';
 import logoMuac from './imagenes/BC-MUAC-mobile@4k - copia.jpg';
-import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube, FaWhatsapp, FaFacebookMessenger } from 'react-icons/fa';
+import { FaWhatsapp, FaFacebookMessenger } from 'react-icons/fa';
 import './App.css';
 import cardImg2 from './imagenes/card-img-2.webp';
 import cardImg3 from './imagenes/card-img-3.webp';
+import PiePagina from "./Pie de Pagina/PiePagina";
 
 
 function App() {
@@ -25,12 +26,12 @@ function App() {
         <>
             <Container>
                 <Row className="align-items-center my-3">
-                    <Col xs={12} sm={6} className="text-center text-md-start mb-3 mb-md-0">
+                    <Col xs={12} sm={6} className="text-center text-md-start justify-content-center mb-3 mb-md-0">
                         <a href="http://www.bajacalifornia.gob.mx/">
                             <img src={logo} alt="Logo" className="logo logo-small" />
                         </a>
                     </Col>
-                    <Col xs={12} lg={6} className="d-flex flex-wrap justify-content-sm-end align-items-center">
+                    <Col xs={12} lg={6} className="d-flex flex-wrap justify-content-center align-items-center">
                         <MediaQuery minDeviceWidth={992}>
                             <a href="tel:+526869009091" target="_blank" rel="noopener noreferrer" className="social-icon">
                                 <FaPhone className="small-icon"/>
@@ -38,7 +39,7 @@ function App() {
                             <a href="https://api.whatsapp.com/send/?phone=5216869009091&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="social-icon">
                                 <FaWhatsapp className="small-icon"/>
                             </a>
-                            <a href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F120544204635995" target="_blank" rel="noopener noreferrer" className="social-icon">
+                            <a href="https://m.me/BC.Gobierno/" target="_blank" rel="noopener noreferrer" className="social-icon">
                                 <FaFacebookMessenger className="small-icon" />
                             </a>
                             <a href="mailto:atencionciudadana@bajacalifornia.gob.mx" target="_blank" rel="noopener noreferrer" className="social-icon">
@@ -135,7 +136,7 @@ function App() {
                                         alt="Card 3"
                                         onClick={() =>
                                             window.open(
-                                                "https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger%2Ft%2F120544204635995",
+                                                "https://m.me/BC.Gobierno/",
                                                 "_blank"
                                             )
                                         }
@@ -358,7 +359,9 @@ function App() {
                     </Col>
                 </Row>
             </Container>
-            <div className="footer-background">
+
+            <PiePagina />
+            {/*<div className="footer-background">
                 <Container>
                     <Row className="my-5">
                         <Col className="text-center">
@@ -382,7 +385,7 @@ function App() {
                             </a>
                         </Col>
                         <Col className="social-icon-col">
-                            <a href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger.com%2Ft%2F120544204635995" target="_blank" rel="noopener noreferrer" className="social-icon">
+                            <a href="https://m.me/BC.Gobierno/" target="_blank" rel="noopener noreferrer" className="social-icon">
                                 <FaFacebookMessenger className="icon" size="3em" />
                                 <p>Messenger</p>
                             </a>
@@ -415,126 +418,9 @@ function App() {
                         </Col>
                     </Row>
                 </Container>
-                {/*   <Container>
-                                <Card
-                                    className="custom-card card-2 w-100"
-                                    onClick={() =>
-                                        window.open(
-                                            "https://api.whatsapp.com/send/?phone=5216869009091&text&type=phone_number&app_absent=0",
-                                            "_blank"
-                                        )
-                                    }
-                                    style={{ cursor: 'pointer' }}
-                                >
-                                    <Card.Body className="text-center">
-                                        <Card.Title
-                                            style={{
-                                                fontFamily: 'Montserrat',
-                                                fontStyle: 'normal',
-                                                fontWeight: 700,
-                                                fontSize: '36px',
-                                                lineHeight: '44px',
-                                                letterSpacing: '-0.01em',
-                                                color: '#131313',
-                                            }}
-                                        >
-                                            Whatsapp de Atención Ciudadana
-                                        </Card.Title>
-                                        <Card.Subtitle
-                                            className="mb-2"
-                                            style={{
-                                                fontFamily: 'Montserrat',
-                                                fontStyle: 'normal',
-                                                fontWeight: 400,
-                                                fontSize: '18px',
-                                                lineHeight: '28px',
-                                                color: '#16A34A',
-                                            }}
-                                        >
-                                            Obtén ayuda o información las 24 hrs
-                                        </Card.Subtitle>
-                                        <Card.Link
-                                            href="https://api.whatsapp.com/send/?phone=5216869009091&text&type=phone_number&app_absent=0"
-                                            target="_blank"
-                                            style={{
-                                                fontFamily: 'Montserrat',
-                                                fontStyle: 'normal',
-                                                fontWeight: 700,
-                                                fontSize: '14px',
-                                                lineHeight: '20px',
-                                                color: '#3C3C3B',
-                                            }}
-                                        >
+            </div>*/}
 
-                                            Ir al WhatsApp
-                                            <FaWhatsapp />
-                                        </Card.Link>
-                                    </Card.Body>
-                                </Card>
-                            </Container>
 
-                        </Col>
-                        <Col md={3} className="mb-2">
-                            <Container>
-
-                                    <Card
-                                    className="custom-card card-3 w-100"
-                                    onClick={() =>
-                                        window.open(
-                                            "https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger%2Ft%2F120544204635995",
-                                            "_blank"
-                                        )
-                                    }
-                                    style={{ cursor: 'pointer' }}
-                                >
-                                    <Card.Body className="text-center">
-                                        <Card.Title
-                                            style={{
-                                                fontFamily: 'Montserrat',
-                                                fontStyle: 'normal',
-                                                fontWeight: 700,
-                                                fontSize: '36px',
-                                                lineHeight: '44px',
-                                                letterSpacing: '-0.01em',
-                                                color: '#131313',
-                                            }}
-                                        >
-                                            Messenger de Atención Ciudadana
-                                        </Card.Title>
-                                        <Card.Subtitle
-                                            className="mb-2"
-                                            style={{
-                                                fontFamily: 'Montserrat',
-                                                fontStyle: 'normal',
-                                                fontWeight: 400,
-                                                fontSize: '18px',
-                                                lineHeight: '28px',
-                                                color: '#F43F5E',
-                                            }}
-                                        >
-                                            Obtén ayuda o información las 24 hrs
-                                        </Card.Subtitle>
-                                        <Card.Link
-                                            href="https://www.messenger.com/login.php?next=https%3A%2F%2Fwww.messenger%2Ft%2F120544204635995"
-                                            target="_blank"
-                                            style={{
-                                                fontFamily: 'Montserrat',
-                                                fontStyle: 'normal',
-                                                fontWeight: 700,
-                                                fontSize: '14px',
-                                                lineHeight: '20px',
-                                                color: '#3C3C3B',
-                                            }}
-                                        >
-
-                                            Ir al Messenger
-                                            <FaFacebookMessenger />
-                                        </Card.Link>
-                                    </Card.Body>
-                                </Card>
-                            </Container>
-*/}
-            </div>
         </>
 
     );
