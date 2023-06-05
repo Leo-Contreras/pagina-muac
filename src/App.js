@@ -431,7 +431,7 @@ function App() {
                 <Container>
                     <Row className="my-5">
                         <Col className="text-center">
-                            <h4 className="tramites-header">FORMAS DE CONTACTO</h4>
+                            <h4 className="tramites-header">OTRAS FORMAS DE CONTACTO</h4>
                             <h5 className="tramites-subheader">
                                 Ubicaciones de los Centros de Gobierno en el Estado
                             </h5>
