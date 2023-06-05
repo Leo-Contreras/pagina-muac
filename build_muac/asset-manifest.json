@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "./static/css/main.4f293500.css",
+    "main.js": "./static/js/main.91c87701.js",
+    "static/media/BC-MUAC-mobile@4k - copia.jpg": "./static/media/BC-MUAC-mobile@4k - copia.b3e8790db56ac86b01f5.jpg",
+    "static/media/escudo-baja-california.png": "./static/media/escudo-baja-california.f231a7fcb3b3449c0f7f.png",
+    "static/media/logo-adbc-png.webp": "./static/media/logo-adbc-png.772009dd789116285ba7.webp",
+    "static/media/card-img-3.webp": "./static/media/card-img-3.8174520f12362f0fbb34.webp",
+    "static/media/card-img-2.webp": "./static/media/card-img-2.ffe7d783080e1a795a9c.webp",
+    "index.html": "./index.html",
+    "main.4f293500.css.map": "./static/css/main.4f293500.css.map",
+    "main.91c87701.js.map": "./static/js/main.91c87701.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f293500.css",
+    "static/js/main.91c87701.js"
+  ]
+}

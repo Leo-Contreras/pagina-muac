@@ -19,9 +19,76 @@ import './App.css';
 import cardImg2 from './imagenes/card-img-2.webp';
 import cardImg3 from './imagenes/card-img-3.webp';
 import PiePagina from "./Pie de Pagina/PiePagina";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 
 
 function App() {
+
+    const centros = [
+        {
+            titulo: 'Centro de Gobierno MEXICALI',
+            direccion: `
+      Edificio Poder Ejecutivo
+      Calzada Independencia #994
+      Centro Cívico y Comercial
+      Mexicali, B.C.
+      C.P. 21000
+    `,
+            enlace: 'https://goo.gl/maps/MVH9znuQkZLAjxFb9',
+        },
+        {
+            titulo: 'Centro de Gobierno TIJUANA',
+            direccion: `
+      Vía Oriente #10252
+      Zona del Río
+      Tijuana, B.C.
+      C.P. 22320
+    `,
+            enlace: 'https://goo.gl/maps/5bq1RcRD6g3cz9nG9',
+        },
+        {
+            titulo: 'Centro de Gobierno ENSENADA',
+            direccion: `
+      Carretera Transpeninsular
+      Ensenada-La Paz #6500
+      Ex-ejido Chapultepec
+      Ensenada, B.C.
+      C.P. 22785
+    `,
+            enlace: 'https://goo.gl/maps/RKfov6UaRe6rrShk7',
+        },
+        {
+            titulo: 'Centro de Gobierno PLAYAS DE ROSARITO',
+            direccion: `
+      Calle José Haros Aguilar 2000
+      Villa Turística, Parcela 39
+      Rosarito, B.C.
+      C.P. 22710
+    `,
+            enlace: 'https://goo.gl/maps/JE8eJ2EhxtHuvRYv5',
+        },
+        {
+            titulo: 'Centro de Gobierno TECATE',
+            direccion: `
+      Callejón Libertad #1305
+      Zona Centro, Tecate, B.C.
+      C.P. 21430
+    `,
+            enlace: 'https://goo.gl/maps/YxihpT5FcLXZR83u9',
+        },
+        {
+            titulo: 'Centro de Gobierno SAN QUINTÍN',
+            direccion: `
+      Av. "A" entre 9 y 10 s/n
+      San Quintín B.C.
+      C.P. 22930
+    `,
+            enlace: 'https://goo.gl/maps/NP6PjZ3r4u9RjWut5',
+        },
+    ];
+
+
     return (
         <>
             <Container>
@@ -358,6 +425,34 @@ function App() {
                         </Card>
                     </Col>
                 </Row>
+            </Container>
+
+            <Container fluid className=" py-4">
+                <Container>
+                    <Row className="my-5">
+                        <Col className="text-center">
+                            <h4 className="tramites-header">FORMAS DE CONTACTO</h4>
+                            <h5 className="tramites-subheader">
+                                Ubicaciones de los Centros de Gobierno en el Estado
+                            </h5>
+                        </Col>
+                    </Row>
+                    <Row className="pt-4">
+                        {centros.map((centro, index) => (
+                            <Col key={index} xs={12} sm={6} md={4} className="mb-3">
+                                <h6 className="mb-3">
+                                    <a href={centro.enlace} style={{ color: '#B17A45' }} className="text-decoration-none">
+                                        <FontAwesomeIcon icon={faMapMarkerAlt} style={{ color: '#B17A45' }} /> <strong>{centro.titulo}</strong>
+                                    </a>
+                                </h6>
+
+                                <p className="">
+                                    {centro.direccion.split('\n').map((line, i) => <span key={i}>{line}<br/></span>)}
+                                </p>
+                            </Col>
+                        ))}
+                    </Row>
+                </Container>
             </Container>
 
             <PiePagina />
