@@ -83,7 +83,7 @@ const PiePagina = () => {
                 <Container className="text-center">
                     <p className="font-weight-bold small-text mb-0">
                         Copyright © 2023  Portal de Gobierno de Baja California | Agencia Digital | Politicas de Privacidad y Seguridad
-                        última fecha de actualización del día 24 de Mayo del 2023
+                        última fecha de actualización del día 05 de Junio del 2023
                     </p>
                 </Container>
             </Container>

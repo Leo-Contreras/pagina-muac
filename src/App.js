@@ -173,8 +173,8 @@ function App() {
                             />
                             */}
 
-                            <Card bg="dark" key="Dark" text="white" className="custom-card card-1 text-center">
-                                <Card.Header> Sitio web oficial del Gobierno del Estado de Baja California</Card.Header>
+                            <Card style={{ backgroundColor: '#6A1C32' }}  text="white" className="custom-card card-1 text-center">
+                                <Card.Header style={{ borderBottom: 'none' }}> Sitio web oficial del Gobierno del Estado de Baja California</Card.Header>
                                 <Card.Title>
                                     http://www.bajacalifornia.gob.mx
                                 </Card.Title>
