@@ -35,6 +35,52 @@
   </head>
   <body>
     <noscript>© 2023 - Gobierno del Estado de Baja California | Políticas de Privacidad y Seguridad | Accesibilidad</noscript>
+
+    <script>
+
+
+      (function()
+
+              {
+                const s = document.createElement('script'); const h = document.querySelector('head') || document.body; s.src = 'https://acsbapp.com/apps/app/dist/js/app.js'; s.async = true;
+                s.onload = function(){
+                  acsbJS.init({
+                            statementLink : 'http://www.bajacalifornia.gob.mx/accesibilidad',
+                            footerHtml : 'Gobierno del Estado de Baja California',
+                            hideMobile : false,
+                            hideTrigger : false,
+                            disableBgProcess : false,
+                            language : 'es',
+                            position : 'right',
+                            leadColor : '#691c31',
+                            triggerColor : '#156ff8',
+                            triggerRadius : '50%',
+                            triggerPositionX : 'right',
+                            triggerPositionY : 'bottom',
+                            triggerIcon : 'people',
+                            triggerSize : 'medium',
+                            triggerOffsetX : 20,
+                            triggerOffsetY : 20,
+
+                            mobile : {
+                              triggerSize : 'small',
+                              triggerPositionX : 'right',
+                              triggerPositionY : 'bottom',
+                              triggerOffsetX : 10,
+                              triggerOffsetY : 10,
+                              triggerRadius : '50%'
+                            }
+                          }
+                  );
+                };
+                h.appendChild(s);
+
+              }
+      )
+      ();
+
+    </script>
+
     <div id="root"></div>
 
     <!--

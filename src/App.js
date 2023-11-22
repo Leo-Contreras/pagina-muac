@@ -13,7 +13,7 @@ import { MdEmail, MdLocalPhone, MdLocationOn } from 'react-icons/md';
 import {Container, Row, Col, Card} from 'react-bootstrap';
 import MediaQuery from 'react-responsive';
 import logo from './imagenes/logo-adbc-png.webp';
-import logoMuac from './imagenes/BC-MUAC-mobile@4k - copia.jpg';
+import videoMuac from './videos/Muac Telefónico 2.mp4';
 import { FaWhatsapp, FaFacebookMessenger } from 'react-icons/fa';
 import './App.css';
 import cardImg2 from './imagenes/card-img-2.webp';
@@ -147,7 +147,10 @@ function App() {
                         <h1 className="header"> Modelo Único de Atención Ciudadana BC </h1>
                     </Col>
                     <Col className="col-12 col-md text-center text-md-start">
-                        <img src={logoMuac} alt="Logo MUAC" className="logo-muac"/>
+                        <video controls className="w-100">
+                            <source src={videoMuac} type="video/mp4" />
+                            Tu navegador no soporta videos HTML5.
+                        </video>
                     </Col>
                 </Row>
 
@@ -248,7 +251,7 @@ function App() {
                                             }
                                             style={{ backgroundColor: "#6A1C32" }}
                                         >
-                                            Ir a sitio SCTG
+                                            Ir a sitio SHFP
                                         </button>
                                     </Card.Body>
                                 </Container>
@@ -454,6 +457,12 @@ function App() {
                     </Row>
                 </Container>
             </Container>
+
+            <Container>
+
+
+            </Container>
+
 
             <PiePagina />
             {/*<div className="footer-background">

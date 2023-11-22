@@ -279,6 +279,10 @@
   text-decoration: none;
 }
 
+.link-text:hover {
+  color: #B17A45;
+
+}
 
 
 .card-2,
