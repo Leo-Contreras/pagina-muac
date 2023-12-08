@@ -12,15 +12,19 @@ import {
 import { MdEmail, MdLocalPhone, MdLocationOn } from 'react-icons/md';
 import {Container, Row, Col, Card} from 'react-bootstrap';
 import MediaQuery from 'react-responsive';
-import logo from './imagenes/logo-adbc-png.webp';
-import videoMuac from './videos/Muac Telefónico 2.mp4';
+
 import { FaWhatsapp, FaFacebookMessenger } from 'react-icons/fa';
 import './App.css';
 import cardImg2 from './imagenes/card-img-2.webp';
 import cardImg3 from './imagenes/card-img-3.webp';
+import logo from './imagenes/logo-adbc-png.webp';
+import videoMuac from './videos/Muac Telefónico 2.mp4';
+import banner from './imagenes/bannermuac.jpg';
 import PiePagina from "./Pie de Pagina/PiePagina";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function App() {
@@ -93,11 +97,12 @@ function App() {
         <>
             <Container>
                 <Row className="align-items-center my-3">
-                    <Col xs={12} sm={6} className="text-center text-md-start justify-content-center mb-3 mb-md-0">
+                    <Col xs={10} sm={6} className="text-center text-md-start justify-content-center mb-3 mb-md-0">
                         <a href="http://www.bajacalifornia.gob.mx/">
                             <img src={logo} alt="Logo" className="logo logo-small" />
                         </a>
                     </Col>
+
                     <Col xs={12} lg={6} className="d-flex flex-wrap justify-content-center align-items-center">
                         <MediaQuery minDeviceWidth={992}>
                             <a href="tel:+526869009091" target="_blank" rel="noopener noreferrer" className="social-icon">
@@ -141,7 +146,10 @@ function App() {
                         */}
                     </Col>
                 </Row>
-                <Row className="my-3">
+            </Container>
+            <img src={banner} alt="banner muac" className="banner-img" />
+            <Container>
+                <Row className="my-3"  style={{ alignItems: 'center' }}>
                     <Col className="col-12 col-md text-center text-md-start">
                         <h1 className="header-2"> Bienvenidos al </h1>
                         <h1 className="header"> Modelo Único de Atención Ciudadana BC </h1>
@@ -442,13 +450,12 @@ function App() {
                     </Row>
                     <Row className="pt-4">
                         {centros.map((centro, index) => (
-                            <Col key={index} xs={12} sm={6} md={4} className="mb-3">
-                                <h6 className="mb-3">
+                            <Col key={index} xs={12} sm={6} md={4} className="mb-1">
+                                <h5 className="mb-1">
                                     <a href={centro.enlace} style={{ color: '#B17A45' }} className="text-decoration-none">
                                         <FontAwesomeIcon icon={faMapMarkerAlt} style={{ color: '#B17A45' }} /> <strong>{centro.titulo}</strong>
                                     </a>
-                                </h6>
-
+                                </h5>
                                 <p className="">
                                     {centro.direccion.split('\n').map((line, i) => <span key={i}>{line}<br/></span>)}
                                 </p>
@@ -465,64 +472,7 @@ function App() {
 
 
             <PiePagina />
-            {/*<div className="footer-background">
-                <Container>
-                    <Row className="my-5">
-                        <Col className="text-center">
-                            <h2 className="social-header">
-                                Consulta nuestras redes sociales oficiales
-                            </h2>
-                        </Col>
-                    </Row>
 
-                    <Row className="social-icons">
-                        <Col className="social-icon-col">
-                            <a href="https://www.facebook.com/BC.Gobierno/?locale=es_LA" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                <FaFacebookF className="icon" size="3em"/>
-                                <p>Facebook</p>
-                            </a>
-                        </Col>
-                        <Col className="social-icon-col">
-                            <a href="https://www.instagram.com/BCGobierno/" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                <FaInstagram className="icon" size="3em" />
-                                <p>Instagram</p>
-                            </a>
-                        </Col>
-                        <Col className="social-icon-col">
-                            <a href="https://m.me/BC.Gobierno/" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                <FaFacebookMessenger className="icon" size="3em" />
-                                <p>Messenger</p>
-                            </a>
-                        </Col>
-                        <Col className="social-icon-col">
-                            <a href="https://twitter.com/bcgobierno" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                <FaTwitter className="icon" size="3em"/>
-                                <p>Twitter</p>
-                            </a>
-                        </Col>
-                        <Col className="social-icon-col">
-                            <a href="https://api.whatsapp.com/send/?phone=5216869009091&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                <FaWhatsapp className="icon" size="3em"/>
-                                <p>WhatsApp</p>
-                            </a>
-                        </Col>
-                        <Col className="social-icon-col">
-                            <a href="https://www.youtube.com/@gobiernodebajacalifornia718" target="_blank" rel="noopener noreferrer" className="social-icon">
-                                <FaYoutube className="icon" size="3em"/>
-                                <p>YouTube</p>
-                            </a>
-                        </Col>
-                    </Row>
-                    <Row className="my-5">
-                        <Col>
-                            <p className="copyright-text">
-                                © 2023 - Gobierno del Estado de Baja California | Políticas de
-                                Privacidad y Seguridad | Accesibilidad
-                            </p>
-                        </Col>
-                    </Row>
-                </Container>
-            </div>*/}
 
 
         </>

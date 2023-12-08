@@ -279,6 +279,13 @@
   text-decoration: none;
 }
 
+.banner-img {
+  width: 100%;
+  /* Asegúrate de que no haya margen o relleno alrededor de la imagen */
+  margin: 0;
+  padding: 0;
+}
+
 .link-text:hover {
   color: #B17A45;
 
@@ -633,7 +640,7 @@
     line-height: 48px;
   }
   .logo-small {
-    max-height: 80px;
+   height: 50px;
   }
 
   .hide-on-mobile {
