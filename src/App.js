@@ -19,7 +19,7 @@ import cardImg2 from './imagenes/card-img-2.webp';
 import cardImg3 from './imagenes/card-img-3.webp';
 import logo from './imagenes/logo-adbc-png.webp';
 import videoMuac from './videos/Muac Telefónico 2.mp4';
-import banner from './imagenes/bannermuac.jpg';
+import banner from './imagenes/MUAC-Banner.jpg';
 import PiePagina from "./Pie de Pagina/PiePagina";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
