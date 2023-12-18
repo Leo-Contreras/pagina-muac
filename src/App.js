@@ -148,21 +148,26 @@ function App() {
                 </Row>
             </Container>
             <img src={banner} alt="banner muac" className="banner-img" />
-            <Container>
-                <Row className="my-3"  style={{ alignItems: 'center' }}>
-                    <Col className="col-12 col-md text-center text-md-start">
-                        <h1 className="header-2"> Bienvenidos al </h1>
-                        <h1 className="header"> Modelo Único de Atención Ciudadana BC </h1>
-                    </Col>
-                    <Col className="col-12 col-md text-center text-md-start">
-                        <video controls className="w-100">
-                            <source src={videoMuac} type="video/mp4" />
-                            Tu navegador no soporta videos HTML5.
-                        </video>
-                    </Col>
-                </Row>
 
-            </Container>
+            <div className="div-con-fondo">
+                <Container>
+                    <Row className="my-3"  style={{ alignItems: 'center' }}>
+                        <Col className="col-12 col-md text-center text-md-start">
+                            {/*   <h1 className="header-2"> Bienvenidos al </h1>
+                            <h1 className="header"> Modelo Único de Atención Ciudadana BC </h1>
+                            */}
+                        </Col>
+                        <Col className="col-12 col-md text-center text-md-start video-col">
+                            <video controls className="w-100">
+                                <source src={videoMuac} type="video/mp4" />
+                                Tu navegador no soporta videos HTML5.
+                            </video>
+                        </Col>
+
+
+                    </Row>
+                </Container>
+            </div>
 
             <div className="grey-background">
                 <Container>

@@ -623,6 +623,19 @@
   }
 }
 
+.div-con-fondo {
+  background-image: url('./imagenes/marco-video.png'); /* Ruta a la imagen importada */
+  background-size: cover; /* Para asegurarse de que la imagen de fondo cubra todo el div */
+  background-repeat: no-repeat; /* Evita que la imagen de fondo se repita */
+  background-position: center center; /* Centra la imagen de fondo horizontal y verticalmente */
+  padding: 20px; /* Ajusta el espaciado interior según sea necesario */
+}
+
+@media (min-width: 768px) { /* Pantallas md o mayores */
+  .video-col {
+    padding-left: 20px; /* Ajusta el valor de padding según tus necesidades */
+  }
+}
 
 
 /* Consulta de medios para pantallas medianas */
