@@ -12,7 +12,6 @@ import {
 import { MdEmail, MdLocalPhone, MdLocationOn } from 'react-icons/md';
 import {Container, Row, Col, Card} from 'react-bootstrap';
 import MediaQuery from 'react-responsive';
-
 import { FaWhatsapp, FaFacebookMessenger } from 'react-icons/fa';
 import './App.css';
 import cardImg2 from './imagenes/card-img-2.webp';
@@ -150,23 +149,28 @@ function App() {
             <img src={banner} alt="banner muac" className="banner-img" />
 
             <div className="div-con-fondo">
+
                 <Container>
-                    <Row className="my-3"  style={{ alignItems: 'center' }}>
-                        <Col className="col-12 col-md text-center text-md-start">
-                            {/*   <h1 className="header-2"> Bienvenidos al </h1>
-                            <h1 className="header"> Modelo Único de Atención Ciudadana BC </h1>
-                            */}
+                    <Row className="my-3 justify-content-around" style={{ alignItems: 'center' }}>
+                        <Col className="col-12 col-md-5 text-md-start mb-5 mt-5">
+                            <h1 className="header-2 text-white text-center">Resolvemos tus dudas sobre trámites y servicios</h1>
+                            <h1 className="header text-white fw-bolder text-center">¡Contáctanos!</h1>
+                            <div className="labelmuac">
+                                Atención <strong>24hrs</strong> 7 días a la semana
+                            </div>
                         </Col>
-                        <Col className="col-12 col-md text-center text-md-start video-col">
+                        <Col className="col-12 col-md-6 text-center text-md-start video-col">
                             <video controls className="w-100">
                                 <source src={videoMuac} type="video/mp4" />
                                 Tu navegador no soporta videos HTML5.
                             </video>
                         </Col>
-
-
                     </Row>
                 </Container>
+
+
+
+
             </div>
 
             <div className="grey-background">
